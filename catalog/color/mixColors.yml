@@ -1,0 +1,19 @@
+id: "mixColors"
+category: "color"
+summary: "Trộn tuyến tính các kênh sRGB (không phải perceptual blend)"
+signature: "mixColors(colorA: string, colorB: string, weight?: number) => string"
+priority: 2
+examples:
+  - in: "Xem file test"
+    out: "Xem file test"
+edge_cases:
+  - "Giá trị không hợp lệ"
+  - "Biên miền giá trị"
+  - "Alpha và màu bán trong suốt"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "color"
+  - "sRGB"
+  - "javascript"

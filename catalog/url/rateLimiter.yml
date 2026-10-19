@@ -1,0 +1,16 @@
+id: rateLimiter
+category: url
+summary: "Sliding window in-memory, không dùng thay rate limiting phân tán"
+signature: "rateLimiter(options: object) => object | Promise"
+priority: 3
+examples: []
+edge_cases:
+  - "invalid input"
+  - "async failure"
+  - "cancellation or boundary"
+status:
+  js: done
+  csharp: todo
+tags:
+  - http
+  - resilience

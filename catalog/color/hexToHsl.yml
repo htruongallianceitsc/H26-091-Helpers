@@ -1,0 +1,19 @@
+id: "hexToHsl"
+category: "color"
+summary: "Chuyển màu HEX/RGB sang HSL"
+signature: "hexToHsl(color: string) => {h,s,l}"
+priority: 2
+examples:
+  - in: "Xem file test"
+    out: "Xem file test"
+edge_cases:
+  - "Giá trị không hợp lệ"
+  - "Biên miền giá trị"
+  - "Alpha và màu bán trong suốt"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "color"
+  - "sRGB"
+  - "javascript"

@@ -5,7 +5,7 @@ import { readCatalog, ROOT, ensureDir, readIfExists } from './lib/catalog.js';
 const items = readCatalog();
 const groups = groupByCategory(items);
 const categoryNames = {
-  string: 'String', number: 'Number & Format', array: 'Array / Collection', object: 'Object',
+  color: 'Color / Accessibility', string: 'String', number: 'Number & Format', array: 'Array / Collection', object: 'Object',
   date: 'Date / Time', validation: 'Validation', async: 'Async / Function', url: 'URL / HTTP',
   error: 'Error / Result', security: 'Security / ID', browser: 'Browser / DOM', config: 'Config / Logging'
 };

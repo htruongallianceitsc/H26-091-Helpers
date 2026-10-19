@@ -1,0 +1,16 @@
+id: cursorPagination
+category: url
+summary: "Tải nhiều trang cursor, giới hạn trang và phát hiện vòng lặp"
+signature: "cursorPagination(options: object) => object | Promise"
+priority: 3
+examples: []
+edge_cases:
+  - "invalid input"
+  - "async failure"
+  - "cancellation or boundary"
+status:
+  js: done
+  csharp: todo
+tags:
+  - http
+  - resilience

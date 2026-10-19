@@ -1,0 +1,17 @@
+id: "alphaBlend"
+category: "color"
+summary: "Ghép màu foreground lên background theo alpha"
+signature: "alphaBlend(foreground: string, background: string) => string"
+priority: 2
+examples:
+  - in: "Xem test tương ứng"
+    out: "Xem test tương ứng"
+edge_cases:
+  - "Giá trị input không hợp lệ"
+  - "Giới hạn miền giá trị"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "color"
+  - "advanced"

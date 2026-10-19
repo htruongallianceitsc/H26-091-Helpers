@@ -1,4 +1,4 @@
-# Helpers Hub v0.7.0
+# Helpers Hub v1.0.0
 
 Helpers Hub
 
@@ -127,3 +127,47 @@ Bổ sung/hoàn thiện 15 helpers: `get`, `set`, `isEmpty`, `isEqual`, `flatten
 - `keyBy` trả `Map`, tránh xung đột các khóa như `__proto__`; `paginate` dùng page bắt đầu từ 1.
 
 Regression offline: `npm run check:offline` (bao gồm `scripts/data-v07-test.js`).
+
+
+## v1.0.0: Async, HTTP & Resilience
+
+- `withTimeout`: timeout cho promise; **không tự hủy tác vụ gốc** nếu tác vụ không hỗ trợ abort.
+- `promisePool`: giới hạn số task chạy đồng thời, giữ thứ tự output.
+- `httpClient`: wrapper fetch, lỗi `AppError`, timeout, AbortSignal, retry có backoff. Chỉ retry mặc định với HTTP method idempotent; không tự retry POST/PATCH.
+- `tryCatch`: tuple `[error, value]` và `joinUrl`: nối URL.
+- Giữ tương thích các helper `retry`, `debounce`, `throttle`, `buildQueryString`, `parseQueryString` hiện có.
+- Chạy `npm run check:offline` để kiểm tra mà không cần npm registry.
+
+**Cảnh báo:** URL phải được ứng dụng tin cậy, không truyền URL từ người dùng trực tiếp vào server-side fetch (SSRF); không ghi log token/header nhạy cảm. Retry PUT/DELETE chỉ an toàn khi backend đảm bảo idempotency.
+
+## v1.0.0 — HTTP & API Production Utilities
+
+Bổ sung 6 helper: `requestDeduplication`, `circuitBreaker`, `rateLimiter`, `retryAfter`, `cursorPagination`, `createApiClient`.
+
+- `requestDeduplication`: chỉ gộp request đang pending theo key, không cache kết quả; chỉ dùng key phù hợp (bao gồm user/tenant nếu cần).
+- `circuitBreaker`: state in-memory theo instance, một probe half-open.
+- `rateLimiter`: sliding window đơn process; không bảo vệ rate limit phân tán.
+- `retryAfter`: parse delta seconds và HTTP date, giới hạn delay. Không tự động retry từ hàm này.
+- `cursorPagination`: trả `complete=false` khi chạm `maxPages`; phát hiện vòng lặp cursor.
+- `createApiClient`: token provider và request/response/error hooks, kết hợp `httpClient` của v0.8.0. Không tự retry phương thức POST.
+
+Chạy `npm run check:offline` để chạy regression kiểm thử v0.1–v0.9 và validate catalog. Test Vitest: `npm install && npm test`.
+
+## Color Utilities — v1.0.0
+
+15 helper mới trong `color/`: chuyển HEX/RGB/HSL; pha trộn/làm sáng/tối; palette; luminance và contrast WCAG 2.x. Các API nhận string HEX/rgb()/rgba() theo cú pháp giới hạn, không hỗ trợ named CSS colors, `hsl()` input hay CSS variables. Để tính tương phản với alpha, background phải opaque; các phép trộn theo sRGB channel không phải perceptual mixing.
+
+## v1.1.0 — Color Advanced
+
+Bổ sung 13 helper trong `packages/js/src/color/`: `rgbToHsv`, `hsvToRgb`, `hexToHsv`, `hsvToHex`, `alphaBlend`, `interpolateGradient`, `analogousColors`, `triadicColors`, `tetradicColors`, `colorTemperatureToRgb`, `rgbToOklch`, `oklchToRgb`, `oklchToHex`.
+
+```js
+import { hexToHsv, alphaBlend, interpolateGradient, rgbToOklch, oklchToHex } from '@helpers-hub/js';
+hexToHsv('#ff6600');
+alphaBlend('#ff000080', '#000000'); // #800000
+interpolateGradient(['#000', '#fff'], 3); // ['#000000', '#808080', '#ffffff']
+const color = rgbToOklch(255, 0, 0);
+oklchToHex(color.l, color.c, color.h); // #ff0000
+```
+
+Các quy tắc quan trọng: `h` theo độ, HSV `s/v` theo phần trăm 0–100; OKLCH `l` nằm trong 0–1, `c` không âm. Chuyển OKLCH về sRGB áp dụng clipping gamut. `interpolateGradient` nội suy trực tiếp kênh sRGB (không phải perceptual); phép Kelvin chỉ xấp xỉ màu vật đen lý tưởng. Để chạy regression không cần cài package: `npm run check:offline`.

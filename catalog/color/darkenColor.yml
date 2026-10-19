@@ -1,0 +1,19 @@
+id: "darkenColor"
+category: "color"
+summary: "Giảm độ sáng HSL với amount 0..1"
+signature: "darkenColor(color: string, amount: number) => string"
+priority: 2
+examples:
+  - in: "Xem file test"
+    out: "Xem file test"
+edge_cases:
+  - "Giá trị không hợp lệ"
+  - "Biên miền giá trị"
+  - "Alpha và màu bán trong suốt"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "color"
+  - "sRGB"
+  - "javascript"

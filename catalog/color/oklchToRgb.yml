@@ -1,0 +1,17 @@
+id: "oklchToRgb"
+category: "color"
+summary: "Chuyển OKLCH sang sRGB, clip gamut"
+signature: "oklchToRgb(l: number, c: number, h: number) => {r,g,b}"
+priority: 2
+examples:
+  - in: "Xem test tương ứng"
+    out: "Xem test tương ứng"
+edge_cases:
+  - "Giá trị input không hợp lệ"
+  - "Giới hạn miền giá trị"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "color"
+  - "advanced"

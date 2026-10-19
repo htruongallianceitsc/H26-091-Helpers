@@ -1,7 +1,7 @@
 id: httpClient
 category: url
 summary: "Wrapper fetch cho base URL, token, timeout và lỗi chuẩn"
-signature: "createHttpClient(options: object) => object"
+signature: "httpClient(options: object) => (path, options) => Promise"
 priority: 3
 examples: []
 edge_cases:
@@ -10,7 +10,7 @@ edge_cases:
   - "JSON lỗi"
   - "abort"
 status:
-  js: todo
+  js: done
   csharp: todo
 tags:
   - http

@@ -1,0 +1,17 @@
+id: "analogousColors"
+category: "color"
+summary: "Sinh ba màu tương đồng theo góc hue"
+signature: "analogousColors(color: string, angle?: number) => string[]"
+priority: 2
+examples:
+  - in: "Xem test tương ứng"
+    out: "Xem test tương ứng"
+edge_cases:
+  - "Giá trị input không hợp lệ"
+  - "Giới hạn miền giá trị"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "color"
+  - "advanced"

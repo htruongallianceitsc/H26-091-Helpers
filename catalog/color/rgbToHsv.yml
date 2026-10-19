@@ -1,0 +1,17 @@
+id: "rgbToHsv"
+category: "color"
+summary: "Chuyển RGB thành HSV"
+signature: "rgbToHsv(r: number, g: number, b: number) => {h,s,v}"
+priority: 2
+examples:
+  - in: "Xem test tương ứng"
+    out: "Xem test tương ứng"
+edge_cases:
+  - "Giá trị input không hợp lệ"
+  - "Giới hạn miền giá trị"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "color"
+  - "advanced"

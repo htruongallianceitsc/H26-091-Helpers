@@ -26,11 +26,11 @@ Legend: ✅ done · 🟨 wip · ⬜ todo · 🧩 builtin · ➖ n/a
 | [`debounce`](./docs/async/debounce.md) | Trì hoãn gọi hàm cho ô search/input | ⭐⭐⭐ | ✅ done | ⬜ todo |
 | [`memoize`](./docs/async/memoize.md) | Cache kết quả hàm | ⭐⭐ | ⬜ todo | ⬜ todo |
 | [`once`](./docs/async/once.md) | Chỉ cho hàm chạy một lần | ⭐ | ⬜ todo | ⬜ todo |
-| [`promisePool`](./docs/async/promisePool.md) | Giới hạn số promise chạy song song | ⭐⭐ | ⬜ todo | ⬜ todo |
+| [`promisePool`](./docs/async/promisePool.md) | Giới hạn số promise chạy song song | ⭐⭐ | ✅ done | ⬜ todo |
 | [`retry`](./docs/async/retry.md) | Thử lại khi lỗi với exponential backoff | ⭐⭐⭐ | ✅ done | ⬜ todo |
 | [`sleep`](./docs/async/sleep.md) | Chờ n mili-giây | ⭐⭐⭐ | ✅ done | ⬜ todo |
 | [`throttle`](./docs/async/throttle.md) | Giới hạn tần suất gọi hàm | ⭐⭐⭐ | ✅ done | ⬜ todo |
-| [`withTimeout`](./docs/async/withTimeout.md) | Giới hạn thời gian promise | ⭐⭐ | ⬜ todo | ⬜ todo |
+| [`withTimeout`](./docs/async/withTimeout.md) | Giới hạn thời gian promise | ⭐⭐ | ✅ done | ⬜ todo |
 
 ## Browser / DOM
 
@@ -41,6 +41,39 @@ Legend: ✅ done · 🟨 wip · ⬜ todo · 🧩 builtin · ➖ n/a
 | [`isInViewport`](./docs/browser/isInViewport.md) | Kiểm tra element trong viewport | ⭐ | ⬜ todo | ➖ n/a |
 | [`scrollToTop`](./docs/browser/scrollToTop.md) | Cuộn về đầu trang | ⭐ | ⬜ todo | ➖ n/a |
 | [`storage`](./docs/browser/storage.md) | Wrapper localStorage có JSON và hạn dùng | ⭐⭐ | ⬜ todo | ➖ n/a |
+
+## color
+
+| Helper | Mục đích | Ưu tiên | JS | C# |
+| --- | --- | :---: | :---: | :---: |
+| [`alphaBlend`](./docs/color/alphaBlend.md) | Ghép màu foreground lên background theo alpha | ⭐⭐ | ✅ done | ⬜ todo |
+| [`analogousColors`](./docs/color/analogousColors.md) | Sinh ba màu tương đồng theo góc hue | ⭐⭐ | ✅ done | ⬜ todo |
+| [`colorTemperatureToRgb`](./docs/color/colorTemperatureToRgb.md) | Xấp xỉ nhiệt độ màu Kelvin sang RGB | ⭐⭐ | ✅ done | ⬜ todo |
+| [`complementaryColor`](./docs/color/complementaryColor.md) | Lấy màu bổ sung bằng cách xoay hue 180 độ | ⭐⭐ | ✅ done | ⬜ todo |
+| [`contrastRatio`](./docs/color/contrastRatio.md) | Tính độ tương phản hai màu theo WCAG; hỗ trợ alpha foreground | ⭐⭐ | ✅ done | ⬜ todo |
+| [`darkenColor`](./docs/color/darkenColor.md) | Giảm độ sáng HSL với amount 0..1 | ⭐⭐ | ✅ done | ⬜ todo |
+| [`generateColorPalette`](./docs/color/generateColorPalette.md) | Sinh dải màu HSL từ sáng đến tối, cố định hue/saturation | ⭐⭐ | ✅ done | ⬜ todo |
+| [`getLuminance`](./docs/color/getLuminance.md) | Tính luminance tương đối sRGB theo WCAG | ⭐⭐ | ✅ done | ⬜ todo |
+| [`getReadableTextColor`](./docs/color/getReadableTextColor.md) | Chọn màu chữ sáng/tối theo độ tương phản lớn hơn | ⭐⭐ | ✅ done | ⬜ todo |
+| [`hexToHsl`](./docs/color/hexToHsl.md) | Chuyển màu HEX/RGB sang HSL | ⭐⭐ | ✅ done | ⬜ todo |
+| [`hexToHsv`](./docs/color/hexToHsv.md) | Chuyển màu HEX thành HSV | ⭐⭐ | ✅ done | ⬜ todo |
+| [`hexToRgb`](./docs/color/hexToRgb.md) | Đọc màu HEX 3/4/6/8 chữ số thành RGBA | ⭐⭐ | ✅ done | ⬜ todo |
+| [`hslToHex`](./docs/color/hslToHex.md) | Chuyển HSL sang HEX sRGB | ⭐⭐ | ✅ done | ⬜ todo |
+| [`hsvToHex`](./docs/color/hsvToHex.md) | Chuyển HSV thành HEX | ⭐⭐ | ✅ done | ⬜ todo |
+| [`hsvToRgb`](./docs/color/hsvToRgb.md) | Chuyển HSV thành RGB | ⭐⭐ | ✅ done | ⬜ todo |
+| [`interpolateGradient`](./docs/color/interpolateGradient.md) | Nội suy gradient qua nhiều điểm màu | ⭐⭐ | ✅ done | ⬜ todo |
+| [`isValidColor`](./docs/color/isValidColor.md) | Kiểm tra cú pháp màu HEX/RGB/RGBA được hỗ trợ | ⭐⭐ | ✅ done | ⬜ todo |
+| [`lightenColor`](./docs/color/lightenColor.md) | Tăng độ sáng HSL với amount 0..1 | ⭐⭐ | ✅ done | ⬜ todo |
+| [`meetsWcagContrast`](./docs/color/meetsWcagContrast.md) | Kiểm tra tương phản WCAG 2.x cho văn bản thường/lớn | ⭐⭐ | ✅ done | ⬜ todo |
+| [`mixColors`](./docs/color/mixColors.md) | Trộn tuyến tính các kênh sRGB (không phải perceptual blend) | ⭐⭐ | ✅ done | ⬜ todo |
+| [`normalizeColor`](./docs/color/normalizeColor.md) | Chuẩn hóa HEX/RGB/RGBA về HEX, giữ alpha nếu có | ⭐⭐ | ✅ done | ⬜ todo |
+| [`oklchToHex`](./docs/color/oklchToHex.md) | Chuyển OKLCH sang HEX | ⭐⭐ | ✅ done | ⬜ todo |
+| [`oklchToRgb`](./docs/color/oklchToRgb.md) | Chuyển OKLCH sang sRGB, clip gamut | ⭐⭐ | ✅ done | ⬜ todo |
+| [`rgbToHex`](./docs/color/rgbToHex.md) | Chuyển RGB/RGBA sang HEX chuẩn lowercase | ⭐⭐ | ✅ done | ⬜ todo |
+| [`rgbToHsv`](./docs/color/rgbToHsv.md) | Chuyển RGB thành HSV | ⭐⭐ | ✅ done | ⬜ todo |
+| [`rgbToOklch`](./docs/color/rgbToOklch.md) | Chuyển sRGB sang OKLCH | ⭐⭐ | ✅ done | ⬜ todo |
+| [`tetradicColors`](./docs/color/tetradicColors.md) | Sinh phối màu bộ bốn hình chữ nhật | ⭐⭐ | ✅ done | ⬜ todo |
+| [`triadicColors`](./docs/color/triadicColors.md) | Sinh phối màu bộ ba cách nhau 120 độ | ⭐⭐ | ✅ done | ⬜ todo |
 
 ## Config / Logging
 
@@ -92,9 +125,9 @@ Legend: ✅ done · 🟨 wip · ⬜ todo · 🧩 builtin · ➖ n/a
 
 | Helper | Mục đích | Ưu tiên | JS | C# |
 | --- | --- | :---: | :---: | :---: |
-| [`appError`](./docs/error/appError.md) | Lỗi chuẩn có code/status/details | ⭐⭐ | ⬜ todo | ⬜ todo |
+| [`appError`](./docs/error/appError.md) | Lỗi chuẩn có code/status/details | ⭐⭐ | ✅ done | ⬜ todo |
 | [`result`](./docs/error/result.md) | Result pattern Ok/Fail | ⭐⭐ | ⬜ todo | ⬜ todo |
-| [`tryCatch`](./docs/error/tryCatch.md) | Trả tuple error/data thay cho try/catch lặp lại | ⭐⭐ | ⬜ todo | ⬜ todo |
+| [`tryCatch`](./docs/error/tryCatch.md) | Trả tuple error/data thay cho try/catch lặp lại | ⭐⭐ | ✅ done | ⬜ todo |
 
 ## format
 
@@ -195,10 +228,16 @@ Legend: ✅ done · 🟨 wip · ⬜ todo · 🧩 builtin · ➖ n/a
 | Helper | Mục đích | Ưu tiên | JS | C# |
 | --- | --- | :---: | :---: | :---: |
 | [`buildQueryString`](./docs/url/buildQueryString.md) | Chuyển object thành query string | ⭐⭐⭐ | ✅ done | ⬜ todo |
+| [`circuitBreaker`](./docs/url/circuitBreaker.md) | Ngắt tạm khi downstream lỗi liên tục, hỗ trợ half-open probe | ⭐⭐⭐ | ✅ done | ⬜ todo |
+| [`createApiClient`](./docs/url/createApiClient.md) | Client API dùng httpClient với token provider và hooks | ⭐⭐⭐ | ✅ done | ⬜ todo |
+| [`cursorPagination`](./docs/url/cursorPagination.md) | Tải nhiều trang cursor, giới hạn trang và phát hiện vòng lặp | ⭐⭐⭐ | ✅ done | ⬜ todo |
 | [`downloadFile`](./docs/url/downloadFile.md) | Tải file từ blob/URL | ⭐⭐ | ⬜ todo | ➖ n/a |
-| [`httpClient`](./docs/url/httpClient.md) | Wrapper fetch cho base URL, token, timeout và lỗi chuẩn | ⭐⭐⭐ | ⬜ todo | ⬜ todo |
-| [`joinUrl`](./docs/url/joinUrl.md) | Nối URL không tạo slash dư | ⭐⭐ | ⬜ todo | ⬜ todo |
+| [`httpClient`](./docs/url/httpClient.md) | Wrapper fetch cho base URL, token, timeout và lỗi chuẩn | ⭐⭐⭐ | ✅ done | ⬜ todo |
+| [`joinUrl`](./docs/url/joinUrl.md) | Nối URL không tạo slash dư | ⭐⭐ | ✅ done | ⬜ todo |
 | [`parseQueryString`](./docs/url/parseQueryString.md) | Chuyển query string thành object | ⭐⭐⭐ | ✅ done | ⬜ todo |
+| [`rateLimiter`](./docs/url/rateLimiter.md) | Sliding window in-memory, không dùng thay rate limiting phân tán | ⭐⭐⭐ | ✅ done | ⬜ todo |
+| [`requestDeduplication`](./docs/url/requestDeduplication.md) | Gộp promise trùng key trong khi đang pending, không cache kết quả | ⭐⭐⭐ | ✅ done | ⬜ todo |
+| [`retryAfter`](./docs/url/retryAfter.md) | Đọc header Retry-After dạng seconds hoặc HTTP date | ⭐⭐⭐ | ✅ done | ⬜ todo |
 
 ## Validation
 

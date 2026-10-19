@@ -1,0 +1,19 @@
+id: "hexToRgb"
+category: "color"
+summary: "Đọc màu HEX 3/4/6/8 chữ số thành RGBA"
+signature: "hexToRgb(hex: string) => {r,g,b,a}"
+priority: 2
+examples:
+  - in: "Xem file test"
+    out: "Xem file test"
+edge_cases:
+  - "Giá trị không hợp lệ"
+  - "Biên miền giá trị"
+  - "Alpha và màu bán trong suốt"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "color"
+  - "sRGB"
+  - "javascript"

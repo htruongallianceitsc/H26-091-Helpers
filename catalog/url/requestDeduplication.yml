@@ -1,0 +1,16 @@
+id: requestDeduplication
+category: url
+summary: "Gộp promise trùng key trong khi đang pending, không cache kết quả"
+signature: "requestDeduplication(options: object) => object | Promise"
+priority: 3
+examples: []
+edge_cases:
+  - "invalid input"
+  - "async failure"
+  - "cancellation or boundary"
+status:
+  js: done
+  csharp: todo
+tags:
+  - http
+  - resilience

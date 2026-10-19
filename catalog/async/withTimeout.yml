@@ -8,7 +8,7 @@ edge_cases:
   - "abort underlying task"
   - "race"
 status:
-  js: todo
+  js: done
   csharp: todo
 tags:
   - async

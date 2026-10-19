@@ -1,0 +1,17 @@
+id: "rgbToOklch"
+category: "color"
+summary: "Chuyển sRGB sang OKLCH"
+signature: "rgbToOklch(r: number, g: number, b: number) => {l,c,h}"
+priority: 2
+examples:
+  - in: "Xem test tương ứng"
+    out: "Xem test tương ứng"
+edge_cases:
+  - "Giá trị input không hợp lệ"
+  - "Giới hạn miền giá trị"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "color"
+  - "advanced"

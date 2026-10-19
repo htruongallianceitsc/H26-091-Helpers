@@ -8,7 +8,7 @@ edge_cases:
   - "protocol slash"
   - "query/hash"
 status:
-  js: todo
+  js: done
   csharp: todo
 tags:
   - url

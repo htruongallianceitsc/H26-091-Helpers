@@ -1,0 +1,19 @@
+id: "complementaryColor"
+category: "color"
+summary: "Lấy màu bổ sung bằng cách xoay hue 180 độ"
+signature: "complementaryColor(color: string) => string"
+priority: 2
+examples:
+  - in: "Xem file test"
+    out: "Xem file test"
+edge_cases:
+  - "Giá trị không hợp lệ"
+  - "Biên miền giá trị"
+  - "Alpha và màu bán trong suốt"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "color"
+  - "sRGB"
+  - "javascript"

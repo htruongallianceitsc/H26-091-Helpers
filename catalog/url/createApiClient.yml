@@ -1,0 +1,16 @@
+id: createApiClient
+category: url
+summary: "Client API dùng httpClient với token provider và hooks"
+signature: "createApiClient(options: object) => object | Promise"
+priority: 3
+examples: []
+edge_cases:
+  - "invalid input"
+  - "async failure"
+  - "cancellation or boundary"
+status:
+  js: done
+  csharp: todo
+tags:
+  - http
+  - resilience

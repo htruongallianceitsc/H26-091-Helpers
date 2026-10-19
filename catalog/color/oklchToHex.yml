@@ -1,0 +1,17 @@
+id: "oklchToHex"
+category: "color"
+summary: "Chuyển OKLCH sang HEX"
+signature: "oklchToHex(l: number, c: number, h: number) => string"
+priority: 2
+examples:
+  - in: "Xem test tương ứng"
+    out: "Xem test tương ứng"
+edge_cases:
+  - "Giá trị input không hợp lệ"
+  - "Giới hạn miền giá trị"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "color"
+  - "advanced"

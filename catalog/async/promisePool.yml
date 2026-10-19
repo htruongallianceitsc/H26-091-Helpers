@@ -8,7 +8,7 @@ edge_cases:
   - "concurrency <= 0"
   - "fail-fast"
 status:
-  js: todo
+  js: done
   csharp: todo
 tags:
   - async

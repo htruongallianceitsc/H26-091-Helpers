@@ -1,0 +1,19 @@
+id: "rgbToHex"
+category: "color"
+summary: "Chuyển RGB/RGBA sang HEX chuẩn lowercase"
+signature: "rgbToHex(r: number, g: number, b: number, alpha?: number) => string"
+priority: 2
+examples:
+  - in: "Xem file test"
+    out: "Xem file test"
+edge_cases:
+  - "Giá trị không hợp lệ"
+  - "Biên miền giá trị"
+  - "Alpha và màu bán trong suốt"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "color"
+  - "sRGB"
+  - "javascript"

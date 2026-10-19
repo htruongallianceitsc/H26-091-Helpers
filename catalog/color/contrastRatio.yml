@@ -1,0 +1,19 @@
+id: "contrastRatio"
+category: "color"
+summary: "Tính độ tương phản hai màu theo WCAG; hỗ trợ alpha foreground"
+signature: "contrastRatio(foreground: string, background: string) => number"
+priority: 2
+examples:
+  - in: "Xem file test"
+    out: "Xem file test"
+edge_cases:
+  - "Giá trị không hợp lệ"
+  - "Biên miền giá trị"
+  - "Alpha và màu bán trong suốt"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "color"
+  - "sRGB"
+  - "javascript"

@@ -1,0 +1,17 @@
+id: "colorTemperatureToRgb"
+category: "color"
+summary: "Xấp xỉ nhiệt độ màu Kelvin sang RGB"
+signature: "colorTemperatureToRgb(kelvin: number) => {r,g,b}"
+priority: 2
+examples:
+  - in: "Xem test tương ứng"
+    out: "Xem test tương ứng"
+edge_cases:
+  - "Giá trị input không hợp lệ"
+  - "Giới hạn miền giá trị"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "color"
+  - "advanced"

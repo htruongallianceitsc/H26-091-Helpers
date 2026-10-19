@@ -23,12 +23,24 @@ tryCatch<T>(fn: Function) => Promise<[unknown|null,T|null]>
 
 ## Trạng thái
 
-- JavaScript: ⬜ `todo`
+- JavaScript: ✅ `done`
 - C#: ⬜ `todo`
 
 ## Code
 
-JavaScript: `todo`.
+::: code-group
 
-C#: `todo`.
+```js [JavaScript]
+/** Return [error, result] for sync or async operations. */
+export async function tryCatch(operation) {
+  try { return [null, await (typeof operation === 'function' ? operation() : operation)]; }
+  catch (error) { return [error, undefined]; }
+}
+```
+
+```text [C#]
+Status: todo
+```
+
+:::
 

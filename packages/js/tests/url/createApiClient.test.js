@@ -1,0 +1,3 @@
+import { describe, it, expect } from 'vitest';
+import { createApiClient } from '../../src/url/createApiClient.js';
+describe('createApiClient', () => { it('handles key behavior and boundary cases', async () => { let captured;const api=createApiClient({baseUrl:'https://example.com/api',getToken:()=> 'token',fetchImpl:async(url,options)=>{captured={url,options};return new Response('{"ok":true}',{status:200})}});expect(await api.get('users')).toEqual({ok:true});expect(captured.url).toBe('https://example.com/api/users');expect(captured.options.headers.get('Authorization')).toBe('Bearer token'); }); });
