@@ -4,7 +4,7 @@
 
 ## Mô tả
 
-Kiểm tra hai thời điểm cùng ngày
+So sánh cùng ngày lịch local
 
 ## Signature
 
@@ -18,16 +18,27 @@ isSameDay(a: Date, b: Date) => boolean
 
 ## Edge cases
 
-- timezone
+- invalid date và năm nhuận
+- timezone, DST hoặc ranh giới ngày/tháng
 
 ## Trạng thái
 
-- JavaScript: ⬜ `todo`
+- JavaScript: ✅ `done`
 - C#: ⬜ `todo`
 
 ## Code
 
-JavaScript: `todo`.
+::: code-group
 
-C#: `todo`.
+```js [JavaScript]
+import { asDate } from './_internal.js';
+/** So sánh ngày lịch local, không so sánh timestamp. */
+export function isSameDay(a,b) { const x=asDate(a),y=asDate(b); return x.getFullYear()===y.getFullYear() && x.getMonth()===y.getMonth() && x.getDate()===y.getDate(); }
+```
+
+```text [C#]
+Status: todo
+```
+
+:::
 

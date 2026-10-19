@@ -4,7 +4,7 @@
 
 ## Mô tả
 
-Tính khoảng cách ngày
+Hiệu số ngày lịch local
 
 ## Signature
 
@@ -18,17 +18,27 @@ diffDays(a: Date, b: Date) => number
 
 ## Edge cases
 
-- DST
-- khác timezone
+- invalid date và năm nhuận
+- timezone, DST hoặc ranh giới ngày/tháng
 
 ## Trạng thái
 
-- JavaScript: ⬜ `todo`
+- JavaScript: ✅ `done`
 - C#: ⬜ `todo`
 
 ## Code
 
-JavaScript: `todo`.
+::: code-group
 
-C#: `todo`.
+```js [JavaScript]
+import { asDate, dayNumber } from './_internal.js';
+/** Khoảng ngày lịch local: a - b, bỏ giờ và tránh lỗi DST. */
+export function diffDays(a,b) { return dayNumber(asDate(a))-dayNumber(asDate(b)); }
+```
+
+```text [C#]
+Status: todo
+```
+
+:::
 

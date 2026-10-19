@@ -1,0 +1,15 @@
+id: isLeapYear
+category: date
+summary: "Kiểm tra năm nhuận"
+signature: "isLeapYear(input: Date|number) => boolean"
+priority: 1
+examples: []
+edge_cases:
+  - "invalid date và năm nhuận"
+  - "timezone, DST hoặc ranh giới ngày/tháng"
+status:
+  js: done
+  csharp: todo
+tags:
+  - date
+  - datetime

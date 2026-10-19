@@ -4,12 +4,12 @@
 
 ## Mô tả
 
-Chuyển Unix timestamp sang Date
+Unix timestamp sang Date (seconds hoặc milliseconds)
 
 ## Signature
 
 ```text
-fromUnix(timestamp: number) => Date
+fromUnix(timestamp: number, unit?: string) => Date
 ```
 
 ## Ví dụ
@@ -18,20 +18,31 @@ fromUnix(timestamp: number) => Date
 
 ## Edge cases
 
-- second vs millisecond
+- invalid date và năm nhuận
+- timezone, DST hoặc ranh giới ngày/tháng
 
 ## Trạng thái
 
-- JavaScript: ⬜ `todo`
+- JavaScript: ✅ `done`
 - C#: 🧩 `builtin`
 
 ## Ghi chú theo ngôn ngữ
 
-- **csharp:** Dùng DateTimeOffset.FromUnixTimeSeconds/Milliseconds.
+- **csharp:** Dùng DateTimeOffset.ToUnixTimeSeconds/FromUnixTimeSeconds hoặc bản Milliseconds.
 
 ## Code
 
-JavaScript: `todo`.
+::: code-group
 
-C#: `builtin`.
+```js [JavaScript]
+import { finiteNumber } from './_internal.js';
+/** Parse Unix timestamp; unit phải được chỉ rõ khi dùng milliseconds. */
+export function fromUnix(timestamp,unit='seconds') { finiteNumber(timestamp,'timestamp'); if(!['seconds','milliseconds'].includes(unit)) throw new RangeError('unit không hợp lệ'); const d=new Date(unit==='seconds'?timestamp*1000:timestamp); if(!Number.isFinite(d.getTime()))throw new RangeError('timestamp vượt giới hạn Date'); return d; }
+```
+
+```text [C#]
+Dùng DateTimeOffset.ToUnixTimeSeconds/FromUnixTimeSeconds hoặc bản Milliseconds.
+```
+
+:::
 

@@ -1,0 +1,15 @@
+id: endOfMonth
+category: date
+summary: "Lấy cuối tháng local"
+signature: "endOfMonth(input: Date) => Date"
+priority: 2
+examples: []
+edge_cases:
+  - "invalid date và năm nhuận"
+  - "timezone, DST hoặc ranh giới ngày/tháng"
+status:
+  js: done
+  csharp: todo
+tags:
+  - date
+  - datetime

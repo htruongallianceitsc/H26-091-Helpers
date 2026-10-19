@@ -1,0 +1,15 @@
+id: startOfIsoWeek
+category: date
+summary: "Đầu tuần ISO (thứ Hai, giờ local)"
+signature: "startOfIsoWeek(input: Date|string|number) => Date"
+priority: 2
+examples: []
+edge_cases:
+  - "invalid input, biên ngày tháng và timezone"
+  - "kiểm tra DST hoặc lịch làm việc nếu có liên quan"
+status:
+  js: done
+  csharp: todo
+tags:
+  - date
+  - datetime

@@ -1,14 +1,15 @@
 id: diffDays
 category: date
-summary: "Tính khoảng cách ngày"
+summary: "Hiệu số ngày lịch local"
 signature: "diffDays(a: Date, b: Date) => number"
 priority: 2
 examples: []
 edge_cases:
-  - "DST"
-  - "khác timezone"
+  - "invalid date và năm nhuận"
+  - "timezone, DST hoặc ranh giới ngày/tháng"
 status:
-  js: todo
+  js: done
   csharp: todo
 tags:
   - date
+  - datetime

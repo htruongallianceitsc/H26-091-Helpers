@@ -1,0 +1,15 @@
+id: formatInTimeZone
+category: date
+summary: "Định dạng thời gian theo IANA timezone"
+signature: "formatInTimeZone(input: Date, timeZone: string, locale?: string, options?: object) => string"
+priority: 3
+examples: []
+edge_cases:
+  - "invalid date và năm nhuận"
+  - "timezone, DST hoặc ranh giới ngày/tháng"
+status:
+  js: done
+  csharp: todo
+tags:
+  - date
+  - datetime

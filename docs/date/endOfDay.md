@@ -4,7 +4,7 @@
 
 ## Mô tả
 
-Lấy cuối ngày
+Lấy thời điểm cuối ngày local
 
 ## Signature
 
@@ -18,17 +18,27 @@ endOfDay(input: Date) => Date
 
 ## Edge cases
 
-- millisecond cuối ngày
-- DST
+- invalid date và năm nhuận
+- timezone, DST hoặc ranh giới ngày/tháng
 
 ## Trạng thái
 
-- JavaScript: ⬜ `todo`
+- JavaScript: ✅ `done`
 - C#: ⬜ `todo`
 
 ## Code
 
-JavaScript: `todo`.
+::: code-group
 
-C#: `todo`.
+```js [JavaScript]
+import { asDate } from './_internal.js';
+/** 23:59:59.999 theo múi giờ local của runtime. */
+export function endOfDay(input) { const d=asDate(input); d.setHours(23,59,59,999); return d; }
+```
+
+```text [C#]
+Status: todo
+```
+
+:::
 

@@ -1,13 +1,15 @@
 id: isSameDay
 category: date
-summary: "Kiểm tra hai thời điểm cùng ngày"
+summary: "So sánh cùng ngày lịch local"
 signature: "isSameDay(a: Date, b: Date) => boolean"
 priority: 1
 examples: []
 edge_cases:
-  - "timezone"
+  - "invalid date và năm nhuận"
+  - "timezone, DST hoặc ranh giới ngày/tháng"
 status:
-  js: todo
+  js: done
   csharp: todo
 tags:
   - date
+  - datetime

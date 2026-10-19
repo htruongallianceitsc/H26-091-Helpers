@@ -4,7 +4,7 @@
 
 ## Mô tả
 
-Kiểm tra cuối tuần
+Xác định thứ bảy, chủ nhật
 
 ## Signature
 
@@ -18,16 +18,27 @@ isWeekend(input: Date) => boolean
 
 ## Edge cases
 
-- timezone
+- invalid date và năm nhuận
+- timezone, DST hoặc ranh giới ngày/tháng
 
 ## Trạng thái
 
-- JavaScript: ⬜ `todo`
+- JavaScript: ✅ `done`
 - C#: ⬜ `todo`
 
 ## Code
 
-JavaScript: `todo`.
+::: code-group
 
-C#: `todo`.
+```js [JavaScript]
+import { asDate } from './_internal.js';
+/** Thứ bảy và chủ nhật, theo múi giờ local. */
+export function isWeekend(input) { return [0,6].includes(asDate(input).getDay()); }
+```
+
+```text [C#]
+Status: todo
+```
+
+:::
 

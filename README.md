@@ -1,4 +1,6 @@
-# Helpers Hub
+# Helpers Hub v0.3.0
+
+Helpers Hub
 
 Kho helper dùng chung được tổ chức theo nguyên tắc **metadata-first**: mỗi helper có một file YAML trong `catalog/` làm nguồn dữ liệu gốc cho tên, mục đích, signature, ví dụ, edge case, độ ưu tiên và trạng thái theo ngôn ngữ.
 
@@ -69,3 +71,32 @@ npm run check
 - `n/a`: không áp dụng cho ngôn ngữ đó.
 
 Xem ma trận đầy đủ tại [CHECKLIST.md](./CHECKLIST.md).
+
+## Date / DateTime (v0.2.0)
+
+Bổ sung 20 helper JS: `addDays`, `diffDays`, `startOfDay`, `endOfDay`, `isSameDay`, `isWeekend`, `toUnix`, `fromUnix`, `addMonths`, `addYears`, `startOfMonth`, `endOfMonth`, `daysInMonth`, `isLeapYear`, `parseDate`, `isBetween`, `getTimezoneOffset`, `formatInTimeZone`, `startOfWeek`, `endOfWeek`.
+
+- Hàm calendar dùng timezone local của runtime. `addDays` thay đổi **ngày lịch**, không cộng 86400000ms, để xử lý DST.
+- Input `YYYY-MM-DD` được hiểu là **ngày local**, trong khi ISO datetime có `Z` hoặc `+07:00` biểu diễn một **instant**. Khi gửi API, ưu tiên UTC ISO 8601 đầy đủ offset.
+- `toUnix`/`fromUnix` mặc định dùng **seconds**; truyền `'milliseconds'` nếu cần ms.
+- `formatInTimeZone` dùng IANA timezone ví dụ `Asia/Ho_Chi_Minh`, không đổi instant gốc.
+- `parseDate` hỗ trợ `DD/MM/YYYY` hoặc `YYYY-MM-DD`, từ chối ngày không tồn tại.
+- Chạy `npm run check:offline` để kiểm tra 20 helper date ngay cả khi chưa cài Vitest.
+
+Ví dụ:
+
+```js
+import { parseDate, addMonths, formatDate, formatInTimeZone } from '@helpers-hub/js';
+const next = addMonths(parseDate('31/01/2024'), 1);
+console.log(formatDate(next)); // 29/02/2024
+console.log(formatInTimeZone('2026-10-19T00:00:00Z', 'Asia/Ho_Chi_Minh'));
+```
+
+## v0.3.0: Business calendar & timezone
+
+- ISO week/year, timezone wall-time conversion (IANA), detect DST gaps/overlaps.
+- Business days, configurable holidays, hours and working-minute calculations.
+- `getVietnamHolidays` intentionally returns **only fixed Gregorian holidays**; it does NOT supply lunar holidays, compensatory days, or the variable additional National Day holiday. Pass officially confirmed dates using `extraDates`.
+- Date-only inputs are **local calendar dates** for local-day helpers; timestamps and explicit `Z`/offset values represent instants. For cross-timezone business hours, pass instants and a `timeZone`.
+- Intervals use `[start,end)` semantics.
+- Run `npm run check:offline` even when Vitest cannot be installed.

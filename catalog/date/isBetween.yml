@@ -1,0 +1,15 @@
+id: isBetween
+category: date
+summary: "Kiểm tra thời điểm nằm trong khoảng"
+signature: "isBetween(input: Date, start: Date, end: Date, inclusive?: boolean) => boolean"
+priority: 2
+examples: []
+edge_cases:
+  - "invalid date và năm nhuận"
+  - "timezone, DST hoặc ranh giới ngày/tháng"
+status:
+  js: done
+  csharp: todo
+tags:
+  - date
+  - datetime

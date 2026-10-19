@@ -1,0 +1,15 @@
+id: addBusinessDays
+category: date
+summary: "Cộng hoặc trừ ngày làm việc, bỏ cuối tuần/ngày nghỉ"
+signature: "addBusinessDays(input: Date|string|number, days:number, options?:object) => Date"
+priority: 3
+examples: []
+edge_cases:
+  - "invalid input, biên ngày tháng và timezone"
+  - "kiểm tra DST hoặc lịch làm việc nếu có liên quan"
+status:
+  js: done
+  csharp: todo
+tags:
+  - date
+  - datetime

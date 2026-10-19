@@ -4,7 +4,7 @@
 
 ## Mô tả
 
-Lấy đầu ngày
+Lấy thời điểm đầu ngày local
 
 ## Signature
 
@@ -18,17 +18,27 @@ startOfDay(input: Date) => Date
 
 ## Edge cases
 
-- DST
-- timezone local
+- invalid date và năm nhuận
+- timezone, DST hoặc ranh giới ngày/tháng
 
 ## Trạng thái
 
-- JavaScript: ⬜ `todo`
+- JavaScript: ✅ `done`
 - C#: ⬜ `todo`
 
 ## Code
 
-JavaScript: `todo`.
+::: code-group
 
-C#: `todo`.
+```js [JavaScript]
+import { asDate } from './_internal.js';
+/** 00:00:00.000 theo múi giờ local của runtime. */
+export function startOfDay(input) { const d=asDate(input); d.setHours(0,0,0,0); return d; }
+```
+
+```text [C#]
+Status: todo
+```
+
+:::
 

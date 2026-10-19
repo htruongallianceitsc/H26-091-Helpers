@@ -1,0 +1,15 @@
+id: endOfWeek
+category: date
+summary: "Lấy cuối tuần, chọn ngày bắt đầu tuần"
+signature: "endOfWeek(input: Date, weekStartsOn?: number) => Date"
+priority: 2
+examples: []
+edge_cases:
+  - "invalid date và năm nhuận"
+  - "timezone, DST hoặc ranh giới ngày/tháng"
+status:
+  js: done
+  csharp: todo
+tags:
+  - date
+  - datetime

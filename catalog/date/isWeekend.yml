@@ -1,13 +1,15 @@
 id: isWeekend
 category: date
-summary: "Kiểm tra cuối tuần"
+summary: "Xác định thứ bảy, chủ nhật"
 signature: "isWeekend(input: Date) => boolean"
 priority: 1
 examples: []
 edge_cases:
-  - "timezone"
+  - "invalid date và năm nhuận"
+  - "timezone, DST hoặc ranh giới ngày/tháng"
 status:
-  js: todo
+  js: done
   csharp: todo
 tags:
   - date
+  - datetime

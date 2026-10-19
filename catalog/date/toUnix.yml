@@ -1,16 +1,17 @@
 id: toUnix
 category: date
-summary: "Chuyển Date sang Unix timestamp"
-signature: "toUnix(input: Date) => number"
+summary: "Date sang Unix timestamp (seconds hoặc milliseconds)"
+signature: "toUnix(input: Date, unit?: string) => number"
 priority: 1
 examples: []
 edge_cases:
-  - "second vs millisecond"
+  - "invalid date và năm nhuận"
+  - "timezone, DST hoặc ranh giới ngày/tháng"
 status:
-  js: todo
+  js: done
   csharp: builtin
 tags:
   - date
-  - timestamp
+  - datetime
 notes:
-  csharp: "Dùng DateTimeOffset.ToUnixTimeSeconds/Milliseconds."
+  csharp: "Dùng DateTimeOffset.ToUnixTimeSeconds/FromUnixTimeSeconds hoặc bản Milliseconds."

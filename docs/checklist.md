@@ -53,16 +53,40 @@ Legend: ✅ done · 🟨 wip · ⬜ todo · 🧩 builtin · ➖ n/a
 
 | Helper | Mục đích | Ưu tiên | JS | C# |
 | --- | --- | :---: | :---: | :---: |
-| [`addDays`](./date/addDays.md) | Cộng số ngày | ⭐⭐ | ⬜ todo | ⬜ todo |
-| [`diffDays`](./date/diffDays.md) | Tính khoảng cách ngày | ⭐⭐ | ⬜ todo | ⬜ todo |
-| [`endOfDay`](./date/endOfDay.md) | Lấy cuối ngày | ⭐⭐ | ⬜ todo | ⬜ todo |
+| [`addBusinessDays`](./date/addBusinessDays.md) | Cộng hoặc trừ ngày làm việc, bỏ cuối tuần/ngày nghỉ | ⭐⭐⭐ | ✅ done | ⬜ todo |
+| [`addDays`](./date/addDays.md) | Cộng ngày lịch, an toàn khi đổi DST | ⭐⭐ | ✅ done | ⬜ todo |
+| [`addMonths`](./date/addMonths.md) | Cộng tháng có xử lý cuối tháng | ⭐⭐ | ✅ done | ⬜ todo |
+| [`addYears`](./date/addYears.md) | Cộng năm có xử lý ngày nhuận | ⭐⭐ | ✅ done | ⬜ todo |
+| [`convertTimeZone`](./date/convertTimeZone.md) | Chuyển instant sang thông tin giờ địa phương của timezone IANA | ⭐⭐⭐ | ✅ done | ⬜ todo |
+| [`countBusinessDays`](./date/countBusinessDays.md) | Đếm ngày làm việc trong khoảng [start,end), theo ngày lịch local | ⭐⭐ | ✅ done | ⬜ todo |
+| [`daysInMonth`](./date/daysInMonth.md) | Đếm ngày trong tháng | ⭐⭐ | ✅ done | ⬜ todo |
+| [`diffDays`](./date/diffDays.md) | Hiệu số ngày lịch local | ⭐⭐ | ✅ done | ⬜ todo |
+| [`endOfDay`](./date/endOfDay.md) | Lấy thời điểm cuối ngày local | ⭐⭐ | ✅ done | ⬜ todo |
+| [`endOfMonth`](./date/endOfMonth.md) | Lấy cuối tháng local | ⭐⭐ | ✅ done | ⬜ todo |
+| [`endOfWeek`](./date/endOfWeek.md) | Lấy cuối tuần, chọn ngày bắt đầu tuần | ⭐⭐ | ✅ done | ⬜ todo |
 | [`formatDate`](./date/formatDate.md) | Định dạng ngày theo pattern | ⭐⭐⭐ | ✅ done | ⬜ todo |
-| [`fromUnix`](./date/fromUnix.md) | Chuyển Unix timestamp sang Date | ⭐ | ⬜ todo | 🧩 builtin |
-| [`isSameDay`](./date/isSameDay.md) | Kiểm tra hai thời điểm cùng ngày | ⭐ | ⬜ todo | ⬜ todo |
-| [`isWeekend`](./date/isWeekend.md) | Kiểm tra cuối tuần | ⭐ | ⬜ todo | ⬜ todo |
-| [`startOfDay`](./date/startOfDay.md) | Lấy đầu ngày | ⭐⭐ | ⬜ todo | ⬜ todo |
+| [`formatInTimeZone`](./date/formatInTimeZone.md) | Định dạng thời gian theo IANA timezone | ⭐⭐⭐ | ✅ done | ⬜ todo |
+| [`fromUnix`](./date/fromUnix.md) | Unix timestamp sang Date (seconds hoặc milliseconds) | ⭐ | ✅ done | 🧩 builtin |
+| [`getIsoWeek`](./date/getIsoWeek.md) | Lấy ISO week và week-year, tuần bắt đầu thứ Hai | ⭐⭐⭐ | ✅ done | ⬜ todo |
+| [`getIsoWeeksInYear`](./date/getIsoWeeksInYear.md) | Số tuần ISO trong năm (52 hoặc 53) | ⭐⭐ | ✅ done | ⬜ todo |
+| [`getTimezoneOffset`](./date/getTimezoneOffset.md) | Lấy offset timezone local (phút phía đông UTC) | ⭐⭐ | ✅ done | ⬜ todo |
+| [`getVietnamHolidays`](./date/getVietnamHolidays.md) | Danh sách ngày nghỉ cố định theo luật VN; Tết và giỗ Tổ phải truyền từ lịch chính thức | ⭐⭐⭐ | ✅ done | ⬜ todo |
+| [`getWorkingMinutes`](./date/getWorkingMinutes.md) | Tính số phút làm việc giữa hai instant theo ngày lịch timezone | ⭐⭐⭐ | ✅ done | ⬜ todo |
+| [`isBetween`](./date/isBetween.md) | Kiểm tra thời điểm nằm trong khoảng | ⭐⭐ | ✅ done | ⬜ todo |
+| [`isBusinessDay`](./date/isBusinessDay.md) | Kiểm tra ngày làm việc, có cấu hình cuối tuần/ngày nghỉ | ⭐⭐⭐ | ✅ done | ⬜ todo |
+| [`isLeapYear`](./date/isLeapYear.md) | Kiểm tra năm nhuận | ⭐ | ✅ done | ⬜ todo |
+| [`isSameDay`](./date/isSameDay.md) | So sánh cùng ngày lịch local | ⭐ | ✅ done | ⬜ todo |
+| [`isWeekend`](./date/isWeekend.md) | Xác định thứ bảy, chủ nhật | ⭐ | ✅ done | ⬜ todo |
+| [`isWithinWorkingHours`](./date/isWithinWorkingHours.md) | Kiểm tra thời điểm có trong giờ làm việc theo timezone IANA | ⭐⭐ | ✅ done | ⬜ todo |
+| [`overlapIntervals`](./date/overlapIntervals.md) | Trả về khoảng giao giữa hai khoảng UTC instant [start,end) | ⭐⭐ | ✅ done | ⬜ todo |
+| [`parseDate`](./date/parseDate.md) | Parse ngày theo format xác định và validate calendar | ⭐⭐⭐ | ✅ done | ⬜ todo |
+| [`startOfDay`](./date/startOfDay.md) | Lấy thời điểm đầu ngày local | ⭐⭐ | ✅ done | ⬜ todo |
+| [`startOfIsoWeek`](./date/startOfIsoWeek.md) | Đầu tuần ISO (thứ Hai, giờ local) | ⭐⭐ | ✅ done | ⬜ todo |
+| [`startOfMonth`](./date/startOfMonth.md) | Lấy đầu tháng local | ⭐⭐ | ✅ done | ⬜ todo |
+| [`startOfWeek`](./date/startOfWeek.md) | Lấy đầu tuần, chọn ngày bắt đầu tuần | ⭐⭐ | ✅ done | ⬜ todo |
 | [`timeAgo`](./date/timeAgo.md) | Hiển thị thời gian tương đối như 3 phút trước | ⭐⭐⭐ | ✅ done | ⬜ todo |
-| [`toUnix`](./date/toUnix.md) | Chuyển Date sang Unix timestamp | ⭐ | ⬜ todo | 🧩 builtin |
+| [`toUnix`](./date/toUnix.md) | Date sang Unix timestamp (seconds hoặc milliseconds) | ⭐ | ✅ done | 🧩 builtin |
+| [`zonedDateTimeToUtc`](./date/zonedDateTimeToUtc.md) | Giải quyết local wall-clock datetime tại timezone thành UTC instant | ⭐⭐⭐ | ✅ done | ⬜ todo |
 
 ## Error / Result
 
