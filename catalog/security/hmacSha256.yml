@@ -1,0 +1,15 @@
+id: "hmacSha256"
+category: "security"
+summary: "Ký HMAC-SHA256 UTF-8 với secret được cung cấp, trả hex."
+signature: "hmacSha256(message: string, secret: string) => Promise<string>"
+priority: 2
+examples: []
+edge_cases:
+  - "Unicode và input không hợp lệ"
+  - "không sử dụng fallback crypto không an toàn"
+status:
+  js: done
+  csharp: todo
+tags:
+  - security
+  - encoding

@@ -8,7 +8,7 @@ edge_cases:
   - "nullish"
   - "Map/Set"
 status:
-  js: todo
+  js: done
   csharp: todo
 tags:
   - object

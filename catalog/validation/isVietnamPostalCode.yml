@@ -1,0 +1,14 @@
+id: "isVietnamPostalCode"
+category: "validation"
+summary: "Kiểm tra mã bưu chính Việt Nam 5 chữ số theo cấu trúc, không tra cứu danh mục"
+signature: "isVietnamPostalCode(value: string) => boolean"
+priority: 2
+examples: []
+edge_cases:
+  - "input không phải string"
+  - "chuỗi không hợp lệ"
+status:
+  js: done
+  csharp: todo
+tags:
+  - validation

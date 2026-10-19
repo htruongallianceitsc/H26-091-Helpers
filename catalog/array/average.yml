@@ -8,7 +8,7 @@ edge_cases:
   - "mảng rỗng"
   - "NaN"
 status:
-  js: todo
+  js: done
   csharp: builtin
 tags:
   - collection

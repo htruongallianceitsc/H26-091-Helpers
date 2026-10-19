@@ -1,0 +1,15 @@
+id: "base64UrlEncode"
+category: "security"
+summary: "Mã hóa Unicode UTF-8 sang Base64URL không padding."
+signature: "base64UrlEncode(text: string) => string"
+priority: 2
+examples: []
+edge_cases:
+  - "Unicode và input không hợp lệ"
+  - "không sử dụng fallback crypto không an toàn"
+status:
+  js: done
+  csharp: todo
+tags:
+  - security
+  - encoding

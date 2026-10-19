@@ -1,0 +1,18 @@
+id: "normalizeWhitespace"
+category: "regex"
+summary: "Chuẩn hóa mọi whitespace Unicode về dấu cách đơn"
+signature: "normalizeWhitespace(...args) => value"
+priority: 2
+examples:
+  - in: "See tests"
+    out: "See tests"
+edge_cases:
+  - "invalid input"
+  - "empty input"
+  - "Unicode and locale"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "regex"
+  - "javascript"

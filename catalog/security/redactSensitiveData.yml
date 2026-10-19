@@ -1,0 +1,15 @@
+id: "redactSensitiveData"
+category: "security"
+summary: "Che các field nhạy cảm trong JSON/object dùng cho log."
+signature: "redactSensitiveData(value: unknown, keys?: string[]) => unknown"
+priority: 2
+examples: []
+edge_cases:
+  - "Unicode và input không hợp lệ"
+  - "không sử dụng fallback crypto không an toàn"
+status:
+  js: done
+  csharp: todo
+tags:
+  - security
+  - encoding

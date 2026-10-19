@@ -1,4 +1,4 @@
-# Helpers Hub v0.3.0
+# Helpers Hub v0.7.0
 
 Helpers Hub
 
@@ -100,3 +100,30 @@ console.log(formatInTimeZone('2026-10-19T00:00:00Z', 'Asia/Ho_Chi_Minh'));
 - Date-only inputs are **local calendar dates** for local-day helpers; timestamps and explicit `Z`/offset values represent instants. For cross-timezone business hours, pass instants and a `timeZone`.
 - Intervals use `[start,end)` semantics.
 - Run `npm run check:offline` even when Vitest cannot be installed.
+
+## v0.4.0 — Format + Regex
+
+Bổ sung 8 format helpers và 9 regex helpers (xem `docs/format` và `docs/regex`). Pattern regex chỉ dùng nguồn tin cậy: JS `RegExp` không cung cấp timeout để chống ReDoS.
+
+## v0.5.0 — Validation
+
+14 validation helpers have been added (including CCCD, Vietnam tax code, vehicle plates, postcodes, colors, IP, usernames and ISO date/time). Syntax checks are **not** authoritative validation against government databases.
+
+## v0.6.0 — Security & Encoding
+
+Bổ sung 11 helper: `hashSha256`, `hmacSha256`, `generateSecureToken`, `base64UrlEncode`, `base64UrlDecode`, `constantTimeEqual`, `parseJwtPayload`, `sanitizeFilename`, `redactSensitiveData`, `bytesToHex`, `hexToBytes`. Dùng `npm run check:offline` để chạy kiểm tra không cần npm install. **Không** dùng `parseJwtPayload` để xác thực JWT; không dùng SHA-256 thuần để lưu mật khẩu.
+
+## v0.7.0: Object & Collection Data Transformation
+
+Bổ sung/hoàn thiện 15 helpers: `get`, `set`, `isEmpty`, `isEqual`, `flattenObject`, `unflattenObject`, `diffObjects`, `normalizeApiResponse`, `sortBy`, `keyBy`, `paginate`, `difference`, `intersection`, `sumBy`, `average`.
+
+- Giữ lại các helper `deepClone`, `deepMerge`, `pick`, `omit`, `groupBy`, `uniqueBy` hiện có, không tạo bản trùng lặp.
+- `get` và `set` nhận path dạng `a.b.0`; `set` trả về shallow clones theo đường dẫn và không sửa dữ liệu gốc.
+- `flattenObject` không chấp nhận key chứa dấu chấm và circular reference; array được giữ nguyên như leaf value.
+- `unflattenObject` chặn các đoạn path nguy hiểm để giảm rủi ro prototype pollution.
+- `isEqual` xử lý object/array/date/regex và circular references; **không hỗ trợ so sánh Map/Set sâu**, trừ trường hợp cùng tham chiếu.
+- `diffObjects` trả về thay đổi **top-level**, không phải JSON Patch.
+- `normalizeApiResponse` là công cụ quy ước shape dữ liệu, không tự xác nhận HTTP status.
+- `keyBy` trả `Map`, tránh xung đột các khóa như `__proto__`; `paginate` dùng page bắt đầu từ 1.
+
+Regression offline: `npm run check:offline` (bao gồm `scripts/data-v07-test.js`).

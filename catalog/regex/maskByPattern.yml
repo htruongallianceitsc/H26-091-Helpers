@@ -1,0 +1,18 @@
+id: "maskByPattern"
+category: "regex"
+summary: "Che chuỗi bằng regex với nhóm capture định nghĩa trước"
+signature: "maskByPattern(...args) => value"
+priority: 2
+examples:
+  - in: "See tests"
+    out: "See tests"
+edge_cases:
+  - "invalid input"
+  - "empty input"
+  - "Unicode and locale"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "regex"
+  - "javascript"

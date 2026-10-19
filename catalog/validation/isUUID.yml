@@ -1,0 +1,14 @@
+id: "isUUID"
+category: "validation"
+summary: "Kiểm tra UUID RFC 4122 dạng canonical (version 1–8, variant RFC)"
+signature: "isUUID(value: string) => boolean"
+priority: 2
+examples: []
+edge_cases:
+  - "input không phải string"
+  - "chuỗi không hợp lệ"
+status:
+  js: done
+  csharp: todo
+tags:
+  - validation

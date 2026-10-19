@@ -23,7 +23,7 @@ average(values: number[]) => number|null
 
 ## Trạng thái
 
-- JavaScript: ⬜ `todo`
+- JavaScript: ✅ `done`
 - C#: 🧩 `builtin`
 
 ## Ghi chú theo ngôn ngữ
@@ -32,7 +32,17 @@ average(values: number[]) => number|null
 
 ## Code
 
-JavaScript: `todo`.
+::: code-group
 
-C#: `builtin`.
+```js [JavaScript]
+/** Tính trung bình, mảng rỗng trả về null. */
+import { sumBy } from './sumBy.js';
+export function average(items,selector=x=>x){if(!Array.isArray(items))throw new TypeError('Cần mảng');return items.length?sumBy(items,selector)/items.length:null;}
+```
+
+```text [C#]
+Ưu tiên LINQ Average khi phù hợp.
+```
+
+:::
 

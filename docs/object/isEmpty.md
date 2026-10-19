@@ -23,12 +23,27 @@ isEmpty(value: unknown) => boolean
 
 ## Trạng thái
 
-- JavaScript: ⬜ `todo`
+- JavaScript: ✅ `done`
 - C#: ⬜ `todo`
 
 ## Code
 
-JavaScript: `todo`.
+::: code-group
 
-C#: `todo`.
+```js [JavaScript]
+/** Kiểm tra rỗng cho chuỗi, mảng, Map, Set, plain object. */
+export function isEmpty(value) {
+  if(value == null) return true;
+  if(typeof value==='string'||Array.isArray(value)) return value.length===0;
+  if(value instanceof Map || value instanceof Set) return value.size===0;
+  if(typeof value==='object') return Reflect.ownKeys(value).length===0;
+  return false;
+}
+```
+
+```text [C#]
+Status: todo
+```
+
+:::
 

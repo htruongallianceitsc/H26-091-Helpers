@@ -1,0 +1,14 @@
+id: "isHexColor"
+category: "validation"
+summary: "Kiểm tra mã màu #RGB, #RGBA, #RRGGBB, #RRGGBBAA"
+signature: "isHexColor(value: string) => boolean"
+priority: 2
+examples: []
+edge_cases:
+  - "input không phải string"
+  - "chuỗi không hợp lệ"
+status:
+  js: done
+  csharp: todo
+tags:
+  - validation

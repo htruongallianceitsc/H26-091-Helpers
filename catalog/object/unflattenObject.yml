@@ -1,0 +1,13 @@
+id: unflattenObject
+category: object
+summary: "Khôi phục object từ flat paths."
+signature: "unflattenObject(object) => object"
+priority: 2
+examples: []
+edge_cases:
+  - "null, empty, invalid inputs"
+status:
+  js: done
+  csharp: todo
+tags:
+  - object

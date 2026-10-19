@@ -1,0 +1,15 @@
+id: "constantTimeEqual"
+category: "security"
+summary: "So sánh byte arrays theo vòng lặp tránh short-circuit."
+signature: "constantTimeEqual(a: Uint8Array, b: Uint8Array) => boolean"
+priority: 2
+examples: []
+edge_cases:
+  - "Unicode và input không hợp lệ"
+  - "không sử dụng fallback crypto không an toàn"
+status:
+  js: done
+  csharp: todo
+tags:
+  - security
+  - encoding

@@ -9,7 +9,7 @@ edge_cases:
   - "array index"
   - "prototype pollution"
 status:
-  js: todo
+  js: done
   csharp: todo
 tags:
   - object

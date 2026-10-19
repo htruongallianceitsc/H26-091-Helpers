@@ -1,0 +1,14 @@
+id: "isRgbColor"
+category: "validation"
+summary: "Kiểm tra rgb() và rgba() với kênh nguyên 0–255 và alpha 0–1"
+signature: "isRgbColor(value: string) => boolean"
+priority: 2
+examples: []
+edge_cases:
+  - "input không phải string"
+  - "chuỗi không hợp lệ"
+status:
+  js: done
+  csharp: todo
+tags:
+  - validation

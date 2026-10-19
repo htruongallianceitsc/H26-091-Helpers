@@ -1,15 +1,14 @@
-id: isTaxCode
-category: validation
-summary: "Kiểm tra định dạng mã số thuế Việt Nam"
+id: "isTaxCode"
+category: "validation"
+summary: "Kiểm tra cấu trúc mã số thuế Việt Nam 10 hoặc 13 chữ số và checksum"
 signature: "isTaxCode(value: string) => boolean"
-priority: 1
+priority: 2
 examples: []
 edge_cases:
-  - "mã chi nhánh"
-  - "checksum nếu áp dụng"
+  - "input không phải string"
+  - "chuỗi không hợp lệ"
 status:
-  js: todo
+  js: done
   csharp: todo
 tags:
   - validation
-  - vietnamese

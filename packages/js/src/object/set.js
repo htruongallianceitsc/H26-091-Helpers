@@ -1,0 +1,13 @@
+/** Tạo bản sao và cập nhật giá trị theo path. */
+export function set(object, path, value) {
+  const keys = Array.isArray(path) ? path : typeof path === 'string' ? path.split('.').filter(Boolean) : null;
+  if (!keys?.length) throw new TypeError('path không hợp lệ');
+  if (keys.some(k => ['__proto__','constructor','prototype'].includes(String(k)))) throw new Error('Unsafe path');
+  const root = Array.isArray(object) ? [...object] : { ...(object ?? {}) }; let cur=root; let old=object;
+  for (let i=0;i<keys.length;i++) {
+    const k=keys[i]; if(i===keys.length-1){ cur[k]=value; break; }
+    const prior=old?.[k]; const next=Array.isArray(prior)?[...prior]:prior!==null&&typeof prior==='object'?{...prior}:/^(0|[1-9]\d*)$/.test(String(keys[i+1]))?[]:{};
+    cur[k]=next;cur=next;old=prior;
+  }
+  return root;
+}

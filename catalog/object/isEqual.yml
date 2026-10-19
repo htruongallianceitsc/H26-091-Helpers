@@ -9,7 +9,7 @@ edge_cases:
   - "Map/Set"
   - "circular reference"
 status:
-  js: todo
+  js: done
   csharp: todo
 tags:
   - object

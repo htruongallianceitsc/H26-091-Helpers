@@ -1,0 +1,13 @@
+id: diffObjects
+category: object
+summary: "Liệt kê thay đổi top-level trước/sau."
+signature: "diffObjects(before, after) => object"
+priority: 2
+examples: []
+edge_cases:
+  - "null, empty, invalid inputs"
+status:
+  js: done
+  csharp: todo
+tags:
+  - object

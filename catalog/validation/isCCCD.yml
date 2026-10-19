@@ -1,15 +1,14 @@
-id: isCCCD
-category: validation
-summary: "Kiểm tra định dạng CCCD Việt Nam"
+id: "isCCCD"
+category: "validation"
+summary: "Kiểm tra định dạng CCCD 12 chữ số, không xác minh cấp phát"
 signature: "isCCCD(value: string) => boolean"
-priority: 1
+priority: 3
 examples: []
 edge_cases:
-  - "độ dài"
-  - "ký tự không phải số"
+  - "input không phải string"
+  - "chuỗi không hợp lệ"
 status:
-  js: todo
+  js: done
   csharp: todo
 tags:
   - validation
-  - vietnamese

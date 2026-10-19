@@ -1,0 +1,14 @@
+id: "isISODateTime"
+category: "validation"
+summary: "Kiểm tra timestamp ISO 8601 có timezone Z hoặc offset; kiểm tra ngày/giờ thực"
+signature: "isISODateTime(value: string) => boolean"
+priority: 3
+examples: []
+edge_cases:
+  - "input không phải string"
+  - "chuỗi không hợp lệ"
+status:
+  js: done
+  csharp: todo
+tags:
+  - validation

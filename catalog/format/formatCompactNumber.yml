@@ -1,0 +1,18 @@
+id: "formatCompactNumber"
+category: "format"
+summary: "Định dạng số rút gọn 1K, 1M theo locale"
+signature: "formatCompactNumber(...args) => value"
+priority: 2
+examples:
+  - in: "See tests"
+    out: "See tests"
+edge_cases:
+  - "invalid input"
+  - "empty input"
+  - "Unicode and locale"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "format"
+  - "javascript"

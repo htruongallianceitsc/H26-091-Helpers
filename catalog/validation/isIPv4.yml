@@ -1,0 +1,14 @@
+id: "isIPv4"
+category: "validation"
+summary: "Kiểm tra IPv4 dotted-decimal, không chấp nhận leading zero"
+signature: "isIPv4(value: string) => boolean"
+priority: 2
+examples: []
+edge_cases:
+  - "input không phải string"
+  - "chuỗi không hợp lệ"
+status:
+  js: done
+  csharp: todo
+tags:
+  - validation

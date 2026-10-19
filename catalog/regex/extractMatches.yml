@@ -1,0 +1,18 @@
+id: "extractMatches"
+category: "regex"
+summary: "Lấy toàn bộ match kèm vị trí và groups"
+signature: "extractMatches(...args) => value"
+priority: 2
+examples:
+  - in: "See tests"
+    out: "See tests"
+edge_cases:
+  - "invalid input"
+  - "empty input"
+  - "Unicode and locale"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "regex"
+  - "javascript"

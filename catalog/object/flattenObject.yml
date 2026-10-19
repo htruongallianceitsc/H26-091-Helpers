@@ -1,0 +1,13 @@
+id: flattenObject
+category: object
+summary: "Trải phẳng plain object thành các path có dấu chấm."
+signature: "flattenObject(object) => object"
+priority: 2
+examples: []
+edge_cases:
+  - "null, empty, invalid inputs"
+status:
+  js: done
+  csharp: todo
+tags:
+  - object

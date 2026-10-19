@@ -1,0 +1,18 @@
+id: "validatePattern"
+category: "regex"
+summary: "Biên dịch và kiểm tra tính hợp lệ cú pháp regex"
+signature: "validatePattern(...args) => value"
+priority: 2
+examples:
+  - in: "See tests"
+    out: "See tests"
+edge_cases:
+  - "invalid input"
+  - "empty input"
+  - "Unicode and locale"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "regex"
+  - "javascript"

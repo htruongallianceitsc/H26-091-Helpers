@@ -4,7 +4,7 @@
 
 ## Mô tả
 
-Kiểm tra định dạng CCCD Việt Nam
+Kiểm tra định dạng CCCD 12 chữ số, không xác minh cấp phát
 
 ## Signature
 
@@ -18,17 +18,28 @@ isCCCD(value: string) => boolean
 
 ## Edge cases
 
-- độ dài
-- ký tự không phải số
+- input không phải string
+- chuỗi không hợp lệ
 
 ## Trạng thái
 
-- JavaScript: ⬜ `todo`
+- JavaScript: ✅ `done`
 - C#: ⬜ `todo`
 
 ## Code
 
-JavaScript: `todo`.
+::: code-group
 
-C#: `todo`.
+```js [JavaScript]
+/** Kiểm tra định dạng CCCD 12 chữ số, không xác minh cấp phát */
+export function isCCCD(value) {
+  return typeof value === 'string' && /^[0-9]{12}$/.test(value);
+}
+```
+
+```text [C#]
+Status: todo
+```
+
+:::
 

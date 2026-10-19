@@ -1,0 +1,14 @@
+id: "isVietnamLicensePlate"
+category: "validation"
+summary: "Kiểm tra định dạng biển xe Việt Nam phổ biến, không tra cứu biển số thực tế"
+signature: "isVietnamLicensePlate(value: string) => boolean"
+priority: 2
+examples: []
+edge_cases:
+  - "input không phải string"
+  - "chuỗi không hợp lệ"
+status:
+  js: done
+  csharp: todo
+tags:
+  - validation

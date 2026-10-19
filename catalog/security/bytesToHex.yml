@@ -1,0 +1,15 @@
+id: "bytesToHex"
+category: "security"
+summary: "Chuyển bytes sang hex lowercase."
+signature: "bytesToHex(bytes: Uint8Array) => string"
+priority: 2
+examples: []
+edge_cases:
+  - "Unicode và input không hợp lệ"
+  - "không sử dụng fallback crypto không an toàn"
+status:
+  js: done
+  csharp: todo
+tags:
+  - security
+  - encoding

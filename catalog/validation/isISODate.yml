@@ -1,0 +1,14 @@
+id: "isISODate"
+category: "validation"
+summary: "Kiểm tra ngày ISO YYYY-MM-DD tồn tại thực sự"
+signature: "isISODate(value: string) => boolean"
+priority: 3
+examples: []
+edge_cases:
+  - "input không phải string"
+  - "chuỗi không hợp lệ"
+status:
+  js: done
+  csharp: todo
+tags:
+  - validation

@@ -1,0 +1,18 @@
+id: "escapeRegExp"
+category: "regex"
+summary: "Escape ký tự đặc biệt để tìm kiếm chuỗi literal an toàn"
+signature: "escapeRegExp(...args) => value"
+priority: 2
+examples:
+  - in: "See tests"
+    out: "See tests"
+edge_cases:
+  - "invalid input"
+  - "empty input"
+  - "Unicode and locale"
+status:
+  js: done
+  csharp: todo
+tags:
+  - "regex"
+  - "javascript"

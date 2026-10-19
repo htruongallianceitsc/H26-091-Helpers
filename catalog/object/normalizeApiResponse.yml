@@ -1,0 +1,13 @@
+id: normalizeApiResponse
+category: object
+summary: "Chuẩn hóa response thành {data,error,success} rõ ràng."
+signature: "normalizeApiResponse(response) => object"
+priority: 2
+examples: []
+edge_cases:
+  - "null, empty, invalid inputs"
+status:
+  js: done
+  csharp: todo
+tags:
+  - object

@@ -1,6 +1,6 @@
 {
   "name": "helpers-hub",
-  "version": "0.3.0",
+  "version": "0.7.0",
   "private": true,
   "type": "module",
   "workspaces": [
@@ -18,7 +18,7 @@
     "docs:build": "vitepress docs build",
     "new-helper": "node scripts/new-helper.js",
     "smoke": "node scripts/smoke-test.js",
-    "check:offline": "npm run validate:catalog && npm run generate && npm run smoke && node scripts/date-test.js && node scripts/date-v03-test.js"
+    "check:offline": "npm run validate:catalog && npm run generate && npm run smoke && node scripts/date-test.js && node scripts/date-v03-test.js && node scripts/format-regex-test.js && node scripts/validation-v05-test.js && node scripts/security-v06-test.js && node scripts/data-v07-test.js"
   },
   "devDependencies": {
     "vitepress": "^1.6.4"

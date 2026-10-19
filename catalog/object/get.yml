@@ -8,7 +8,7 @@ edge_cases:
   - "path không tồn tại"
   - "array index"
 status:
-  js: todo
+  js: done
   csharp: todo
 tags:
   - object

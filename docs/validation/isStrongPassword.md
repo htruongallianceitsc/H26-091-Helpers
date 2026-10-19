@@ -4,12 +4,12 @@
 
 ## Mô tả
 
-Kiểm tra độ mạnh mật khẩu
+Kiểm tra mật khẩu có ít nhất 8 ký tự, chữ hoa, chữ thường, số và ký tự đặc biệt
 
 ## Signature
 
 ```text
-isStrongPassword(value: string, policy?: object) => boolean
+isStrongPassword(value: string) => boolean
 ```
 
 ## Ví dụ
@@ -18,18 +18,28 @@ isStrongPassword(value: string, policy?: object) => boolean
 
 ## Edge cases
 
-- Unicode
-- độ dài
-- policy tùy biến
+- input không phải string
+- chuỗi không hợp lệ
 
 ## Trạng thái
 
-- JavaScript: ⬜ `todo`
+- JavaScript: ✅ `done`
 - C#: ⬜ `todo`
 
 ## Code
 
-JavaScript: `todo`.
+::: code-group
 
-C#: `todo`.
+```js [JavaScript]
+/** Kiểm tra mật khẩu có ít nhất 8 ký tự, chữ hoa, chữ thường, số và ký tự đặc biệt */
+export function isStrongPassword(value) {
+  return typeof value === 'string' && value.length >= 8 && /[a-z]/.test(value) && /[A-Z]/.test(value) && /\d/.test(value) && /[^A-Za-z0-9\s]/.test(value) && !/\s/.test(value);
+}
+```
+
+```text [C#]
+Status: todo
+```
+
+:::
 

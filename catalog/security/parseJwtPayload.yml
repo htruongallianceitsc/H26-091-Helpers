@@ -1,0 +1,15 @@
+id: "parseJwtPayload"
+category: "security"
+summary: "Chỉ decode JSON payload JWT, KHÔNG xác minh chữ ký."
+signature: "parseJwtPayload(token: string) => object"
+priority: 2
+examples: []
+edge_cases:
+  - "Unicode và input không hợp lệ"
+  - "không sử dụng fallback crypto không an toàn"
+status:
+  js: done
+  csharp: todo
+tags:
+  - security
+  - encoding
