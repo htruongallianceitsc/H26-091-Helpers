@@ -1,0 +1,16 @@
+id: base64Encode
+category: security
+summary: "Encode Base64 hỗ trợ Unicode"
+signature: "base64Encode(text: string) => string"
+priority: 2
+examples: []
+edge_cases:
+  - "Unicode"
+  - "binary data"
+status:
+  js: todo
+  csharp: builtin
+tags:
+  - encoding
+notes:
+  csharp: "Dùng Convert.ToBase64String với UTF8 bytes."

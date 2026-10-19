@@ -1,0 +1,16 @@
+id: toUnix
+category: date
+summary: "Chuyển Date sang Unix timestamp"
+signature: "toUnix(input: Date) => number"
+priority: 1
+examples: []
+edge_cases:
+  - "second vs millisecond"
+status:
+  js: todo
+  csharp: builtin
+tags:
+  - date
+  - timestamp
+notes:
+  csharp: "Dùng DateTimeOffset.ToUnixTimeSeconds/Milliseconds."

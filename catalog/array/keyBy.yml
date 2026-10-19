@@ -1,0 +1,14 @@
+id: keyBy
+category: array
+summary: "Chuyển mảng thành map theo key"
+signature: "keyBy<T,K>(items: T[], keySelector: (item:T)=>K) => Map<K,T>"
+priority: 2
+examples: []
+edge_cases:
+  - "key trùng"
+  - "mảng rỗng"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - collection

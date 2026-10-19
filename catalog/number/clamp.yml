@@ -1,0 +1,14 @@
+id: clamp
+category: number
+summary: "Giới hạn số trong khoảng min-max"
+signature: "clamp(value: number, min: number, max: number) => number"
+priority: 2
+examples: []
+edge_cases:
+  - "min lớn hơn max"
+  - "NaN"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - math

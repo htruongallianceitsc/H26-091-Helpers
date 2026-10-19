@@ -1,0 +1,16 @@
+id: throttle
+category: async
+summary: "Giới hạn tần suất gọi hàm"
+signature: "throttle(fn: Function, wait: number) => Function"
+priority: 3
+examples: []
+edge_cases:
+  - "leading"
+  - "trailing"
+  - "cancel"
+status:
+  js: done
+  csharp: todo
+tags:
+  - async
+  - function

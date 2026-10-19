@@ -1,0 +1,15 @@
+id: truncate
+category: string
+summary: "Cắt chuỗi theo độ dài tối đa và thêm hậu tố"
+signature: "truncate(text: string, maxLength: number, suffix?: string) => string"
+priority: 3
+examples: []
+edge_cases:
+  - "maxLength bằng 0"
+  - "suffix dài hơn maxLength"
+status:
+  js: done
+  csharp: todo
+tags:
+  - text
+  - display

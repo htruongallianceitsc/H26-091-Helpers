@@ -1,0 +1,17 @@
+id: httpClient
+category: url
+summary: "Wrapper fetch cho base URL, token, timeout và lỗi chuẩn"
+signature: "createHttpClient(options: object) => object"
+priority: 3
+examples: []
+edge_cases:
+  - "timeout"
+  - "401"
+  - "JSON lỗi"
+  - "abort"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - http
+  - api

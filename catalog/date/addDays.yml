@@ -1,0 +1,14 @@
+id: addDays
+category: date
+summary: "Cộng số ngày"
+signature: "addDays(input: Date, days: number) => Date"
+priority: 2
+examples: []
+edge_cases:
+  - "DST"
+  - "số ngày âm"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - date

@@ -1,0 +1,14 @@
+id: randomString
+category: string
+summary: "Sinh chuỗi ngẫu nhiên"
+signature: "randomString(length: number, alphabet?: string) => string"
+priority: 2
+examples: []
+edge_cases:
+  - "length bằng 0"
+  - "secure random"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - random

@@ -1,0 +1,15 @@
+id: isEmail
+category: validation
+summary: "Kiểm tra email theo quy tắc thực dụng"
+signature: "isEmail(value: string) => boolean"
+priority: 3
+examples: []
+edge_cases:
+  - "domain thiếu TLD"
+  - "space"
+  - "độ dài tối đa"
+status:
+  js: done
+  csharp: todo
+tags:
+  - validation

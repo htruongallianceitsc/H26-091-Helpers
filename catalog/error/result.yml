@@ -1,0 +1,15 @@
+id: result
+category: error
+summary: "Result pattern Ok/Fail"
+signature: "Result<T,E> = Ok<T> | Fail<E>"
+priority: 2
+examples: []
+edge_cases:
+  - "mapping"
+  - "unwrap"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - error
+  - result

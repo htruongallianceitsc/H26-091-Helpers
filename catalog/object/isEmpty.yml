@@ -1,0 +1,15 @@
+id: isEmpty
+category: object
+summary: "Kiểm tra object/array/string rỗng"
+signature: "isEmpty(value: unknown) => boolean"
+priority: 2
+examples: []
+edge_cases:
+  - "nullish"
+  - "Map/Set"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - object
+  - validation

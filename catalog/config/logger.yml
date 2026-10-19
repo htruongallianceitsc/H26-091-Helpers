@@ -1,0 +1,16 @@
+id: logger
+category: config
+summary: "Logger có level và timestamp"
+signature: "createLogger(options?: object) => object"
+priority: 2
+examples: []
+edge_cases:
+  - "redact secret"
+  - "structured data"
+  - "level filtering"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - logging
+  - backend

@@ -1,0 +1,15 @@
+id: withTimeout
+category: async
+summary: "Giới hạn thời gian promise"
+signature: "withTimeout<T>(promise: Promise<T>, ms: number) => Promise<T>"
+priority: 2
+examples: []
+edge_cases:
+  - "abort underlying task"
+  - "race"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - async
+  - timeout

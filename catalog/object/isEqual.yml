@@ -1,0 +1,16 @@
+id: isEqual
+category: object
+summary: "So sánh sâu hai value"
+signature: "isEqual(a: unknown, b: unknown) => boolean"
+priority: 2
+examples: []
+edge_cases:
+  - "Date"
+  - "Map/Set"
+  - "circular reference"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - object
+  - compare

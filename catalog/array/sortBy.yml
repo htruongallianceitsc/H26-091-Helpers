@@ -1,0 +1,17 @@
+id: sortBy
+category: array
+summary: "Sắp xếp theo một hoặc nhiều key"
+signature: "sortBy<T>(items: T[], selectors: Function[]) => T[]"
+priority: 2
+examples: []
+edge_cases:
+  - "nullish field"
+  - "stable sort"
+status:
+  js: todo
+  csharp: builtin
+tags:
+  - collection
+  - sort
+notes:
+  csharp: "Ưu tiên LINQ OrderBy/ThenBy."

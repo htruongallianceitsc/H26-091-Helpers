@@ -1,0 +1,14 @@
+id: sleep
+category: async
+summary: "Chờ n mili-giây"
+signature: "sleep(ms: number, signal?: AbortSignal) => Promise<void>"
+priority: 3
+examples: []
+edge_cases:
+  - "abort"
+  - "ms âm"
+status:
+  js: done
+  csharp: todo
+tags:
+  - async

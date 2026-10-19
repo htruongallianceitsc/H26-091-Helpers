@@ -1,0 +1,17 @@
+id: isInViewport
+category: browser
+summary: "Kiểm tra element trong viewport"
+signature: "isInViewport(element: Element, options?: object) => boolean"
+priority: 1
+examples: []
+edge_cases:
+  - "partial visibility"
+  - "SSR"
+status:
+  js: todo
+  csharp: n/a
+tags:
+  - browser
+  - dom
+notes:
+  csharp: "Browser-only helper."

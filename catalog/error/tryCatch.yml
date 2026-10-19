@@ -1,0 +1,14 @@
+id: tryCatch
+category: error
+summary: "Trả tuple error/data thay cho try/catch lặp lại"
+signature: "tryCatch<T>(fn: Function) => Promise<[unknown|null,T|null]>"
+priority: 2
+examples: []
+edge_cases:
+  - "sync vs async"
+  - "error object"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - error

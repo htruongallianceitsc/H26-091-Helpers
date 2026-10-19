@@ -1,0 +1,16 @@
+id: set
+category: object
+summary: "Gán value theo path a.b.c"
+signature: "set(object: object, path: string, value: unknown) => object"
+priority: 2
+examples: []
+edge_cases:
+  - "path mới"
+  - "array index"
+  - "prototype pollution"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - object
+  - path

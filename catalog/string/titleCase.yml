@@ -1,0 +1,14 @@
+id: titleCase
+category: string
+summary: "Viết hoa chữ cái đầu mỗi từ"
+signature: "titleCase(text: string) => string"
+priority: 2
+examples: []
+edge_cases:
+  - "nhiều khoảng trắng"
+  - "Unicode"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - text

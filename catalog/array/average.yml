@@ -1,0 +1,17 @@
+id: average
+category: array
+summary: "Tính trung bình"
+signature: "average(values: number[]) => number|null"
+priority: 2
+examples: []
+edge_cases:
+  - "mảng rỗng"
+  - "NaN"
+status:
+  js: todo
+  csharp: builtin
+tags:
+  - collection
+  - math
+notes:
+  csharp: "Ưu tiên LINQ Average khi phù hợp."

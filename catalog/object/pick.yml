@@ -1,0 +1,13 @@
+id: pick
+category: object
+summary: "Lấy một số field từ object"
+signature: "pick<T>(object: T, keys: (keyof T)[]) => Partial<T>"
+priority: 3
+examples: []
+edge_cases:
+  - "key không tồn tại"
+status:
+  js: done
+  csharp: todo
+tags:
+  - object

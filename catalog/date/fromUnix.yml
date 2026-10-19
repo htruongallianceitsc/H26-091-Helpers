@@ -1,0 +1,16 @@
+id: fromUnix
+category: date
+summary: "Chuyển Unix timestamp sang Date"
+signature: "fromUnix(timestamp: number) => Date"
+priority: 1
+examples: []
+edge_cases:
+  - "second vs millisecond"
+status:
+  js: todo
+  csharp: builtin
+tags:
+  - date
+  - timestamp
+notes:
+  csharp: "Dùng DateTimeOffset.FromUnixTimeSeconds/Milliseconds."

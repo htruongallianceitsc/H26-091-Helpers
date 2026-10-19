@@ -1,0 +1,14 @@
+id: camelCase
+category: string
+summary: "Đổi chuỗi sang camelCase"
+signature: "camelCase(text: string) => string"
+priority: 2
+examples: []
+edge_cases:
+  - "separator hỗn hợp"
+  - "Unicode"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - naming

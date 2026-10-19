@@ -1,0 +1,15 @@
+id: removeNullish
+category: object
+summary: "Bỏ field null/undefined trước khi gửi API"
+signature: "removeNullish(object: object) => object"
+priority: 2
+examples: []
+edge_cases:
+  - "giữ 0/false/chuỗi rỗng"
+  - "shallow semantics"
+status:
+  js: done
+  csharp: todo
+tags:
+  - object
+  - api

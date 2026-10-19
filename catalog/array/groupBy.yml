@@ -1,0 +1,16 @@
+id: groupBy
+category: array
+summary: "Nhóm phần tử theo key"
+signature: "groupBy<T,K>(items: T[], keySelector: (item:T)=>K) => Map<K,T[]>"
+priority: 3
+examples: []
+edge_cases:
+  - "key object"
+  - "mảng rỗng"
+status:
+  js: done
+  csharp: builtin
+tags:
+  - collection
+notes:
+  csharp: "Dùng LINQ Enumerable.GroupBy."

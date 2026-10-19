@@ -1,0 +1,16 @@
+id: removeAccents
+category: string
+summary: "Bỏ dấu tiếng Việt, hữu ích cho search"
+signature: "removeAccents(text: string) => string"
+priority: 3
+examples: []
+edge_cases:
+  - "null/undefined"
+  - "chữ đ/Đ"
+  - "giữ hoa/thường"
+status:
+  js: done
+  csharp: todo
+tags:
+  - search
+  - vietnamese

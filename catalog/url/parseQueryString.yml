@@ -1,0 +1,16 @@
+id: parseQueryString
+category: url
+summary: "Chuyển query string thành object"
+signature: "parseQueryString(query: string) => object"
+priority: 3
+examples: []
+edge_cases:
+  - "repeated key"
+  - "empty query"
+  - "Unicode"
+status:
+  js: done
+  csharp: todo
+tags:
+  - url
+  - http

@@ -1,0 +1,13 @@
+id: isWeekend
+category: date
+summary: "Kiểm tra cuối tuần"
+signature: "isWeekend(input: Date) => boolean"
+priority: 1
+examples: []
+edge_cases:
+  - "timezone"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - date

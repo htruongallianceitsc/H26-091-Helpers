@@ -1,0 +1,14 @@
+id: joinUrl
+category: url
+summary: "Nối URL không tạo slash dư"
+signature: "joinUrl(...parts: string[]) => string"
+priority: 2
+examples: []
+edge_cases:
+  - "protocol slash"
+  - "query/hash"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - url

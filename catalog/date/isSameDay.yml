@@ -1,0 +1,13 @@
+id: isSameDay
+category: date
+summary: "Kiểm tra hai thời điểm cùng ngày"
+signature: "isSameDay(a: Date, b: Date) => boolean"
+priority: 1
+examples: []
+edge_cases:
+  - "timezone"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - date

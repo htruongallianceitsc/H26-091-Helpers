@@ -1,0 +1,15 @@
+id: deepClone
+category: object
+summary: "Sao chép sâu object/array"
+signature: "deepClone<T>(value: T) => T"
+priority: 3
+examples: []
+edge_cases:
+  - "Date"
+  - "RegExp"
+  - "circular reference"
+status:
+  js: done
+  csharp: todo
+tags:
+  - object

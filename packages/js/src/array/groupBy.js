@@ -1,0 +1,19 @@
+/**
+ * Nhóm mảng theo key và trả về Map.
+ * @template T, K
+ * @param {T[]} items
+ * @param {(item: T) => K} keySelector
+ * @returns {Map<K, T[]>}
+ */
+export function groupBy(items, keySelector) {
+  if (!Array.isArray(items)) throw new TypeError('items phải là mảng');
+  if (typeof keySelector !== 'function') throw new TypeError('keySelector phải là hàm');
+  const result = new Map();
+  for (const item of items) {
+    const key = keySelector(item);
+    const group = result.get(key);
+    if (group) group.push(item);
+    else result.set(key, [item]);
+  }
+  return result;
+}

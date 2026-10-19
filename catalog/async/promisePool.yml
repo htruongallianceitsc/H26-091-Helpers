@@ -1,0 +1,15 @@
+id: promisePool
+category: async
+summary: "Giới hạn số promise chạy song song"
+signature: "promisePool<T>(tasks: Function[], concurrency: number) => Promise<T[]>"
+priority: 2
+examples: []
+edge_cases:
+  - "concurrency <= 0"
+  - "fail-fast"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - async
+  - concurrency

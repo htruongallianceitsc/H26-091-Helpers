@@ -1,0 +1,14 @@
+id: uniqueBy
+category: array
+summary: "Loại trùng theo key, giữ phần tử đầu tiên"
+signature: "uniqueBy<T,K>(items: T[], keySelector: (item:T)=>K) => T[]"
+priority: 3
+examples: []
+edge_cases:
+  - "key nullish"
+  - "mảng rỗng"
+status:
+  js: done
+  csharp: todo
+tags:
+  - collection

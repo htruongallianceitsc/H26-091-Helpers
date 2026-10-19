@@ -1,0 +1,15 @@
+id: maskString
+category: string
+summary: "Che một phần chuỗi như email, điện thoại hoặc thẻ"
+signature: "maskString(text: string, options?: object) => string"
+priority: 2
+examples: []
+edge_cases:
+  - "chuỗi quá ngắn"
+  - "Unicode"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - privacy
+  - display

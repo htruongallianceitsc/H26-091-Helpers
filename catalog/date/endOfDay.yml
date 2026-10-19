@@ -1,0 +1,14 @@
+id: endOfDay
+category: date
+summary: "Lấy cuối ngày"
+signature: "endOfDay(input: Date) => Date"
+priority: 2
+examples: []
+edge_cases:
+  - "millisecond cuối ngày"
+  - "DST"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - date

@@ -1,0 +1,18 @@
+id: isPhoneVN
+category: validation
+summary: "Kiểm tra số di động Việt Nam"
+signature: "isPhoneVN(value: string) => boolean"
+priority: 3
+examples:
+  - in: "0901234567"
+    out: true
+edge_cases:
+  - "+84"
+  - "0 prefix"
+  - "separator"
+status:
+  js: done
+  csharp: todo
+tags:
+  - validation
+  - vietnamese

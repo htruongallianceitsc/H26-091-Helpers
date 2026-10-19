@@ -1,0 +1,17 @@
+id: copyToClipboard
+category: browser
+summary: "Sao chép text qua Clipboard API"
+signature: "copyToClipboard(text: string) => Promise<void>"
+priority: 3
+examples: []
+edge_cases:
+  - "API unavailable"
+  - "permission denied"
+status:
+  js: done
+  csharp: n/a
+tags:
+  - browser
+  - clipboard
+notes:
+  csharp: "Browser-only helper."

@@ -1,0 +1,19 @@
+id: slugify
+category: string
+summary: "Tạo slug URL, bỏ dấu tiếng Việt"
+signature: "slugify(text: string, separator?: string) => string"
+priority: 3
+examples:
+  - in: "Xin chào Việt Nam!"
+    out: "xin-chao-viet-nam"
+edge_cases:
+  - "chuỗi rỗng"
+  - "chữ đ/Đ"
+  - "nhiều khoảng trắng liên tiếp"
+status:
+  js: done
+  csharp: todo
+tags:
+  - url
+  - seo
+  - vietnamese

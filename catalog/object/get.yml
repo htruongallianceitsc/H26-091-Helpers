@@ -1,0 +1,15 @@
+id: get
+category: object
+summary: "Truy cập value theo path a.b.c"
+signature: "get(object: object, path: string, fallback?: unknown) => unknown"
+priority: 2
+examples: []
+edge_cases:
+  - "path không tồn tại"
+  - "array index"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - object
+  - path

@@ -1,0 +1,15 @@
+id: isNumeric
+category: validation
+summary: "Kiểm tra chuỗi có phải số"
+signature: "isNumeric(value: string) => boolean"
+priority: 2
+examples: []
+edge_cases:
+  - "số âm"
+  - "thập phân"
+  - "scientific notation"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - validation

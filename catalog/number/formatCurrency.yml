@@ -1,0 +1,15 @@
+id: formatCurrency
+category: number
+summary: "Định dạng tiền tệ bằng locale/currency"
+signature: "formatCurrency(value: number, options?: object) => string"
+priority: 3
+examples: []
+edge_cases:
+  - "NaN/Infinity"
+  - "VND không có phần thập phân"
+status:
+  js: done
+  csharp: todo
+tags:
+  - format
+  - money

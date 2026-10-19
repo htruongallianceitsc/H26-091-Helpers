@@ -1,0 +1,17 @@
+id: uuid
+category: security
+summary: "Sinh UUID v4 bằng secure random"
+signature: "uuid() => string"
+priority: 3
+examples: []
+edge_cases:
+  - "crypto API unavailable"
+  - "format v4"
+status:
+  js: done
+  csharp: builtin
+tags:
+  - security
+  - id
+notes:
+  csharp: "Dùng Guid.NewGuid()."

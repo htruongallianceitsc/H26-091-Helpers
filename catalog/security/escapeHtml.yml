@@ -1,0 +1,16 @@
+id: escapeHtml
+category: security
+summary: "Escape HTML khi render text"
+signature: "escapeHtml(text: string) => string"
+priority: 2
+examples: []
+edge_cases:
+  - "quotes"
+  - "ampersand"
+  - "double escape"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - security
+  - xss

@@ -1,0 +1,14 @@
+id: capitalize
+category: string
+summary: "Viết hoa chữ cái đầu"
+signature: "capitalize(text: string) => string"
+priority: 2
+examples: []
+edge_cases:
+  - "chuỗi rỗng"
+  - "Unicode"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - text

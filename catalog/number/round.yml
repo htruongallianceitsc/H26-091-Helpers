@@ -1,0 +1,14 @@
+id: round
+category: number
+summary: "Làm tròn đến n chữ số thập phân"
+signature: "round(value: number, precision?: number) => number"
+priority: 2
+examples: []
+edge_cases:
+  - "precision âm"
+  - "floating point"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - math

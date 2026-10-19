@@ -1,0 +1,15 @@
+id: paginate
+category: array
+summary: "Phân trang mảng trong bộ nhớ"
+signature: "paginate<T>(items: T[], page: number, pageSize: number) => object"
+priority: 2
+examples: []
+edge_cases:
+  - "page ngoài phạm vi"
+  - "pageSize <= 0"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - collection
+  - pagination

@@ -1,0 +1,14 @@
+id: diffDays
+category: date
+summary: "Tính khoảng cách ngày"
+signature: "diffDays(a: Date, b: Date) => number"
+priority: 2
+examples: []
+edge_cases:
+  - "DST"
+  - "khác timezone"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - date

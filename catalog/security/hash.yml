@@ -1,0 +1,17 @@
+id: hash
+category: security
+summary: "Băm chuỗi SHA-256"
+signature: "hash(text: string, algorithm?: string) => Promise<string>"
+priority: 2
+examples: []
+edge_cases:
+  - "Unicode encoding"
+  - "browser vs Node"
+status:
+  js: todo
+  csharp: builtin
+tags:
+  - security
+  - crypto
+notes:
+  csharp: "Dùng SHA256.HashData / IncrementalHash."

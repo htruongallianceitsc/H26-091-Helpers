@@ -1,0 +1,17 @@
+id: sumBy
+category: array
+summary: "Tính tổng theo selector"
+signature: "sumBy<T>(items: T[], selector: (item:T)=>number) => number"
+priority: 2
+examples: []
+edge_cases:
+  - "mảng rỗng"
+  - "NaN"
+status:
+  js: todo
+  csharp: builtin
+tags:
+  - collection
+  - math
+notes:
+  csharp: "Ưu tiên LINQ Sum."

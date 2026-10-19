@@ -1,0 +1,17 @@
+id: scrollToTop
+category: browser
+summary: "Cuộn về đầu trang"
+signature: "scrollToTop(options?: object) => void"
+priority: 1
+examples: []
+edge_cases:
+  - "SSR"
+  - "smooth behavior"
+status:
+  js: todo
+  csharp: n/a
+tags:
+  - browser
+  - dom
+notes:
+  csharp: "Browser-only helper."

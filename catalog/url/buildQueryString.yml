@@ -1,0 +1,16 @@
+id: buildQueryString
+category: url
+summary: "Chuyển object thành query string"
+signature: "buildQueryString(params: object, options?: object) => string"
+priority: 3
+examples: []
+edge_cases:
+  - "Unicode"
+  - "array"
+  - "nullish"
+status:
+  js: done
+  csharp: todo
+tags:
+  - url
+  - http

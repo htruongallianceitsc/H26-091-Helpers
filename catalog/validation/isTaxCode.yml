@@ -1,0 +1,15 @@
+id: isTaxCode
+category: validation
+summary: "Kiểm tra định dạng mã số thuế Việt Nam"
+signature: "isTaxCode(value: string) => boolean"
+priority: 1
+examples: []
+edge_cases:
+  - "mã chi nhánh"
+  - "checksum nếu áp dụng"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - validation
+  - vietnamese

@@ -1,0 +1,14 @@
+id: appError
+category: error
+summary: "Lỗi chuẩn có code/status/details"
+signature: "new AppError(message: string, options?: object)"
+priority: 2
+examples: []
+edge_cases:
+  - "serialization"
+  - "cause"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - error

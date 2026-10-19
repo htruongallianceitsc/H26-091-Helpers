@@ -1,0 +1,16 @@
+id: retry
+category: async
+summary: "Thử lại khi lỗi với exponential backoff"
+signature: "retry<T>(fn: Function, options?: object) => Promise<T>"
+priority: 3
+examples: []
+edge_cases:
+  - "max attempts"
+  - "abort"
+  - "shouldRetry"
+status:
+  js: done
+  csharp: todo
+tags:
+  - async
+  - resilience

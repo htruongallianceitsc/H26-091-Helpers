@@ -1,0 +1,14 @@
+id: startOfDay
+category: date
+summary: "Lấy đầu ngày"
+signature: "startOfDay(input: Date) => Date"
+priority: 2
+examples: []
+edge_cases:
+  - "DST"
+  - "timezone local"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - date

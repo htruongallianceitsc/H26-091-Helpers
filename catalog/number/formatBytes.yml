@@ -1,0 +1,16 @@
+id: formatBytes
+category: number
+summary: "Định dạng byte thành KB/MB/GB"
+signature: "formatBytes(bytes: number, options?: object) => string"
+priority: 2
+examples: []
+edge_cases:
+  - "0 byte"
+  - "số âm"
+  - "đơn vị rất lớn"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - format
+  - file

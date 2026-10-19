@@ -1,0 +1,13 @@
+id: omit
+category: object
+summary: "Bỏ một số field khỏi object"
+signature: "omit<T>(object: T, keys: (keyof T)[]) => Partial<T>"
+priority: 3
+examples: []
+edge_cases:
+  - "key không tồn tại"
+status:
+  js: done
+  csharp: todo
+tags:
+  - object

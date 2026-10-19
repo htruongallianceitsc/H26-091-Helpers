@@ -1,0 +1,16 @@
+id: timeAgo
+category: date
+summary: "Hiển thị thời gian tương đối như 3 phút trước"
+signature: "timeAgo(input: Date|string|number, now?: Date|string|number) => string"
+priority: 3
+examples: []
+edge_cases:
+  - "tương lai"
+  - "vừa xong"
+  - "invalid date"
+status:
+  js: done
+  csharp: todo
+tags:
+  - date
+  - display

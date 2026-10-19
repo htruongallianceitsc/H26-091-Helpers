@@ -1,0 +1,17 @@
+id: formatNumber
+category: number
+summary: "Định dạng số và phân cách hàng nghìn"
+signature: "formatNumber(value: number, options?: object) => string"
+priority: 3
+examples:
+  - in: 1234567
+    out: "1.234.567"
+edge_cases:
+  - "NaN/Infinity"
+  - "số âm"
+  - "thập phân"
+status:
+  js: done
+  csharp: todo
+tags:
+  - format

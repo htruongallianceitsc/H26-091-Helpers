@@ -1,0 +1,14 @@
+id: once
+category: async
+summary: "Chỉ cho hàm chạy một lần"
+signature: "once(fn: Function) => Function"
+priority: 1
+examples: []
+edge_cases:
+  - "throw lần đầu"
+  - "return cache"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - function

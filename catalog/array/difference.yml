@@ -1,0 +1,15 @@
+id: difference
+category: array
+summary: "Lấy phần tử chỉ có ở mảng A"
+signature: "difference<T>(a: T[], b: T[]) => T[]"
+priority: 2
+examples: []
+edge_cases:
+  - "duplicate"
+  - "object identity"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - collection
+  - set

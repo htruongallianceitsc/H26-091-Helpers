@@ -1,0 +1,16 @@
+id: deepMerge
+category: object
+summary: "Gộp sâu config/options"
+signature: "deepMerge(...objects: object[]) => object"
+priority: 3
+examples: []
+edge_cases:
+  - "array semantics"
+  - "null"
+  - "prototype pollution"
+status:
+  js: done
+  csharp: todo
+tags:
+  - object
+  - config

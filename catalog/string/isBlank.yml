@@ -1,0 +1,16 @@
+id: isBlank
+category: string
+summary: "Kiểm tra null/rỗng/chỉ có khoảng trắng"
+signature: "isBlank(value: unknown) => boolean"
+priority: 3
+examples: []
+edge_cases:
+  - "null"
+  - "undefined"
+  - "whitespace"
+  - "0/false không phải blank"
+status:
+  js: done
+  csharp: todo
+tags:
+  - validation

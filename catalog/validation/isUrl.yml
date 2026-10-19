@@ -1,0 +1,15 @@
+id: isUrl
+category: validation
+summary: "Kiểm tra URL hợp lệ"
+signature: "isUrl(value: string, options?: object) => boolean"
+priority: 2
+examples: []
+edge_cases:
+  - "relative URL"
+  - "protocol allowlist"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - validation
+  - url

@@ -1,0 +1,16 @@
+id: getEnv
+category: config
+summary: "Đọc biến môi trường có default và ép kiểu"
+signature: "getEnv(name: string, options?: object) => unknown"
+priority: 2
+examples: []
+edge_cases:
+  - "missing required"
+  - "boolean parsing"
+  - "number parsing"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - config
+  - backend

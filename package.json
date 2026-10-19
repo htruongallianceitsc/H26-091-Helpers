@@ -1,0 +1,29 @@
+{
+  "name": "helpers-hub",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "npm --workspace @helpers-hub/js test",
+    "test:coverage": "npm --workspace @helpers-hub/js run test:coverage",
+    "validate:catalog": "node scripts/validate-catalog.js",
+    "gen:checklist": "node scripts/gen-checklist.js",
+    "gen:docs": "node scripts/gen-docs.js",
+    "generate": "npm run gen:checklist && npm run gen:docs",
+    "check": "npm run validate:catalog && npm run generate && npm test",
+    "docs:dev": "vitepress docs",
+    "docs:build": "vitepress docs build",
+    "new-helper": "node scripts/new-helper.js",
+    "smoke": "node scripts/smoke-test.js",
+    "check:offline": "npm run validate:catalog && npm run generate && npm run smoke"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "engines": {
+    "node": ">=20.11"
+  }
+}

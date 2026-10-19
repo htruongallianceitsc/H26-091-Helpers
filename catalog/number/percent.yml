@@ -1,0 +1,14 @@
+id: percent
+category: number
+summary: "Tính phần trăm an toàn"
+signature: "percent(part: number, total: number, fallback?: number) => number"
+priority: 1
+examples: []
+edge_cases:
+  - "total bằng 0"
+  - "số âm"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - math

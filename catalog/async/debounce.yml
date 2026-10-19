@@ -1,0 +1,16 @@
+id: debounce
+category: async
+summary: "Trì hoãn gọi hàm cho ô search/input"
+signature: "debounce(fn: Function, wait: number) => Function"
+priority: 3
+examples: []
+edge_cases:
+  - "cancel"
+  - "flush"
+  - "giữ this/args"
+status:
+  js: done
+  csharp: todo
+tags:
+  - async
+  - function

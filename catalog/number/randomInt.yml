@@ -1,0 +1,14 @@
+id: randomInt
+category: number
+summary: "Sinh số nguyên ngẫu nhiên trong khoảng"
+signature: "randomInt(min: number, max: number) => number"
+priority: 2
+examples: []
+edge_cases:
+  - "min=max"
+  - "secure random"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - random

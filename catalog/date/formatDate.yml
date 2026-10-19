@@ -1,0 +1,15 @@
+id: formatDate
+category: date
+summary: "Định dạng ngày theo pattern"
+signature: "formatDate(input: Date|string|number, pattern?: string) => string"
+priority: 3
+examples: []
+edge_cases:
+  - "invalid date"
+  - "YYYY-MM-DD tránh lệch UTC"
+status:
+  js: done
+  csharp: todo
+tags:
+  - date
+  - format

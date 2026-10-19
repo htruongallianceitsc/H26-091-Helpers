@@ -1,0 +1,15 @@
+id: memoize
+category: async
+summary: "Cache kết quả hàm"
+signature: "memoize(fn: Function, keyResolver?: Function) => Function"
+priority: 2
+examples: []
+edge_cases:
+  - "object key"
+  - "cache invalidation"
+status:
+  js: todo
+  csharp: todo
+tags:
+  - function
+  - cache
